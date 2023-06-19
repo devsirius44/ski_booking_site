@@ -1,0 +1,6 @@
+firstName: Abhishek
+lastName: Mishra
+email: abhishekmishra28@gmail.com
+phone: '8208604156'
+message: 'Need ski package details. Planning to come with a friend for 4 days to Gulmarg from 13th to 16th January'
+

@@ -1,0 +1,21 @@
+First Name: Nick
+Last Name: Arora
+Email: nick.arora@scrollnext.com
+Phone: 9779944889
+Question and Comments: Hi Yanik,
+I'm Nick, a highly skilled web designer and developer who's been in the industry for 13+ years, specializing in WordPress and PHP-based websites. I've taken the time to carefully review your project description and website- https://skigulmarg.com/ and I'm confident that I'm the perfect fit for this job.
+The opportunity to work on the conversion of the tour operator booking form from using the checkfront.com API to a custom form that can send an email immediately caught my attention. With my strong web development skills and experience, I am confident in my ability to successfully undertake this project and deliver exceptional results.
+
+Having visited Skigulmarg.com, I am impressed with its potential and the impact a well-designed and streamlined booking form can have on enhancing the user experience. I understand that the objective of this project is to transition from the existing API-based system to a more efficient form-based solution. I am excited to contribute my expertise and collaborate with you to achieve this goal.
+
+I have acquired a deep understanding of front-end and back-end technologies. I have a proven track record of successfully developing and implementing custom forms that facilitate seamless data capture and email delivery. Furthermore, I am well-versed in conducting comprehensive testing and troubleshooting to ensure optimal functionality.
+
+Apart from the page's look and feel, I will focus more on
+- Color schemes sync. with the nature of business- Compelling content- Calls to action- SEO Friendly- Clean code structure- Look and feel of landing pages- Top header navigation- Place CTA at right places- Slider with multiple images- CTA on each slide- Make the website responsive for mobile- Optimize the speed- Improve the user experience
+My core skills include:
+-  Photoshop, Illustrator, Figma-  HTML5, CSS, JS-  WordPress, Shopify, Joomla, PHP-  Wix, Drupal, Magento & Hubspot-  ReactJS, Angular & Node JS-  Wireframing (Axure, Balsamiq, MS Visio)-  Mobile Design (Responsive Design-  MySQL, MongoDB
+You can check my portfolio here: https://scrollnext.com/wp-content/uploads/2022/03/scroll-1.pdf
+Please let me know if you have any queries. We can schedule a call or communicate via emails. I have delivered multiple projects in past as a freelancer, I can also showcase those web links if required. Please let me know.
+Looking forward to hearing from you soon.
+Warm Regards,Nick
+

@@ -1,0 +1,6 @@
+firstName: Lalremdika
+lastName: 'Vangchhia '
+email: remdika95@gmail.com
+phone: '7085098030'
+message: "Hi, I wanted to know if there is a need to have a certification for snowboarding. If yes, then what are the advantages?\r\nPlus, do you provide any certification courses in your packages??"
+

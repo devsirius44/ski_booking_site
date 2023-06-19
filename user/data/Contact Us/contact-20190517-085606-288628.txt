@@ -1,0 +1,6 @@
+firstName: jason
+lastName: anthony
+email: jasonanthony247@gmail.com
+phone: '459942175'
+message: "Hello,\r\nBest deal for group booking 10 adults at HOTEL ALPINE RIDGE.\r\n10 night stay including 3 days Heli Ski.\r\nDate February 01/02/2020\r\n\r\nRegards\r\n\r\nJason Anthony"
+

@@ -1,0 +1,176 @@
+// Modal
+.modal-content {
+    border-radius: 4px;
+    @media screen and (max-width: 479px) {
+        border-radius: 0;
+        border: none;
+        height: 100vh;
+        overflow: scroll;
+    }
+}
+.modal-dialog {
+    @media screen and (max-width: 480px) {
+        margin: 0;
+    }
+    @media screen and (min-width: 768px) {
+        width: 720px;
+        margin: 30px auto;
+    }
+}
+
+.searching-availability {
+    background: url('//skigulmarg.checkfront.com/images/loader.gif') left center no-repeat; 
+    padding: 5px 5px 5px 20px;
+}
+.modal-header {
+    padding: 15px;
+    border: none;
+    .close {
+        font-size: 2em;
+    }
+}
+.modal-header:after {
+  color: $dark-light;
+  margin-top: 10px;
+  font-size: 12px;
+}
+html[lang='en'] .modal-header:after {
+  content: "* We offer ski packages from January 27 to March 17 because snow conditions, before and after, can be less than ideal. All prices are in CAD, we are from Canada.";
+}
+
+html[lang='fr'] .modal-header:after {
+  content: "* Nous proposons des forfaits de ski du 27 janvier au 17 mars, car les conditions de neige, avant et après, peuvent être moins qu'idéales. Tous les prix sont en CAN, nous sommes du Canada.";
+}
+.modal-backdrop {
+    bottom: 0;
+}
+.modal-body {
+    padding: 15px;
+    .accordion {
+        margin: 0;
+        .table-container {
+            margin: 0;
+        }
+    }
+}
+
+.modal-strip {
+    background-color: $base-color;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    display: inline-block;
+    transform: translate3d(0px, 300px, 0px);
+    transition: all 0.7s ease 0s;
+    z-index: 999 !important;
+    .btn,
+    h5,
+    h4,
+    h3,
+    h2,
+    h1 {
+        margin-bottom: 0;
+    }
+    a {
+        color: #fff;
+    }
+    &.modal-top {
+        bottom: auto;
+        top: 0;
+        transform: translate3d(0px, -200px, 0px);
+    }
+    &.modal-left {
+        bottom: auto;
+        top: auto;
+        left: 0;
+        right: auto;
+        width: 30%;
+        transform: none;
+    }
+    &.modal-right {
+        transform: translate3d(0px, 0px, 0px);
+        bottom: auto;
+        top: 0;
+    }
+    &.modal-active {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    &#cookieNotify {
+      .col-md-4 {
+        text-align: center;
+      }
+      @media (max-width: 991px) {
+        .col-md-8 {
+          padding: 0;
+        }
+      }
+      @media (min-width: 992px) {
+        .col-md-8 {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .col-md-4 {
+          float: right;
+          text-align: right;
+        }
+      }
+    }
+}
+
+
+/* Zoom-out effect*/
+.mfp-zoom-out {
+
+  /* start state */
+  .mfp-content {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.3);
+  }
+
+  &.mfp-bg {
+    opacity: 0;
+	  transition: all 0.3s ease-out;
+  }
+
+  /* animate in */
+  &.mfp-ready {
+    .mfp-content {
+      opacity: 1;
+      transform: scale(1);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+
+  /* animate out */
+  &.mfp-removing {
+
+    .mfp-content {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+
+  }
+
+}
+
+.mfp-ready .modal {
+  background: #fff;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 40px;
+  position: relative;
+  z-index: 1050;
+}
+

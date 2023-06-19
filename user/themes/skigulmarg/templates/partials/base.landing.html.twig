@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="ie ie6 ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <![endif]-->
+    <meta name="robots" content="index,follow">
+    <meta name="google-site-verification" content="x_Hf0Q-RLfReYruJjnthcI7J-b9gsdtpbdqz2ojUt8k">
+    <!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+    <meta name="author" content="{{ site.author.name|e('html') }}">
+    <meta name="description" content="{% if header.description %}{{ header.description|e('html') }}{% endif %}">
+    <meta name="keywords" content="{{ "KEYWORDS"|t }}{% if header.keywords %}, {{ header.keywords|e('html') }}{% endif %}">
+    <meta name="copyright" content="Skigulmarg.com"/>
+
+    <!-- Document title -->
+    <title>{% if search_results %}{{"SEARCH.RESULTS"|t('html')}} | {% elseif header.title %}{{ header.title|e('html') }} | {% endif %}{{ "TITLE"|t }}</title>
+
+    <!-- Links -->
+    <link rel="canonical" href="{{ base_url }}{% if header.canonical %}{{ header.canonical|e('html') }}{% endif %}">
+    <link rel="alternate" href="{{ base_url }}{% if header.alternate %}{{ header.alternate|e('html') }}{% endif %}" hreflang="{% if header.alternateHrefLang %}{{ header.alternateHrefLang|e('html') }}{% endif %}">
+    <link rel="alternate" href="{{ base_url }}{% if header.alternate2 %}{{ header.alternate2|e('html') }}{% endif %}" hreflang="{% if header.alternateHrefLang2 %}{{ header.alternateHrefLang2|e('html') }}{% endif %}">
+    <link rel="author" href="https://plus.google.com/u/2/113991432665232479994/about" title="Yanik Turgeon on Google+">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url('theme://images/favicon.ico') }}" />
+
+    <!-- Stylesheets & Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600%7CMontserrat:400,700" rel="stylesheet" type="text/css">
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css/plugins.css') %}
+        {% do assets.addCss('theme://css/responsive.css') %}
+        {% do assets.addCss('theme://css/style.min.css') %}
+        {% do assets.addCss('//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.css') %}
+        {% do assets.addCss('//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css') %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53152277-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53152277-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TR8FBDP');</script>
+    <!-- End Google Tag Manager -->
+
+    {% block customStyles %}{% endblock %}
+
+    <!-- Pageloader fix in case of disabled JavaScript -->
+    <noscript>
+        <style>
+            /* Forcing opacity to 1 because preloader requires JS */
+            body:not(.no-page-loader) #wrapper {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '617573335021722');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=617573335021722&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR8FBDP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <h1 style="display:none">Skigulmarg.com — The Most Complete Website about Gulmarg Ski Resort</h1>
+    <noscript>
+        <div class="no-javascript">
+            {{ "NOSCRIPT"|t }}
+        </div>
+    </noscript>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        {% include 'partials/header.html.twig' %}
+        <!-- end: Header -->
+
+        {% block content %}{% endblock %}
+
+        <!-- Footer -->
+        {% include 'partials/footer.landing.html.twig' %}
+        <!-- end: Footer -->
+    </div>
+    <!-- end: Wrapper -->
+
+    <!--Modal Cookie-->
+    <div id="cookieNotify" class="modal-strip modal-bottom cookie-notify" data-delay="1000" data-expire="30" data-name="websiteCookiesPoloWeb">
+        <div class="container">
+            <div class="row" style="position:relative">
+                <div class="col-md-8 text-sm-center sm-m-b-10">
+                    {{ "COOKIES.MESSAGE"|t }}
+                    <a href="/legal/privacy-policies" class="text-light">
+                        <span style="display:inline-block">
+                            {{ "COOKIES.MORE"|t }}<i class="fa fa-info-circle m-l-5"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-rounded btn-sm m-r-10 modal-close">
+                        {{ "COOKIES.DECLINE"|t }}
+                    </button>
+                    <button type="button" class="btn btn-light btn-rounded btn-outline btn-sm modal-confirm">
+                        {{ "COOKIES.ACCEPT"|t }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End: Modal Cookie-->
+
+    <!-- Go to top button -->
+    <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
+
+
+    {% do assets.addJs('theme://js/plugins.js') %}
+    {% do assets.addJs('theme://js/weather.min.js') %}
+    {% do assets.addJs('theme://js/plugins/easyzoom/dist/easyzoom.js') %}
+    {% do assets.addJs('plugins://simplesearch/js/simplesearch.js') %}
+    {% do assets.addJs('//skigulmarg.checkfront.com/lib/interface--32.js') %}
+    {% do assets.addJs('//cdn.jsdelivr.net/momentjs/latest/moment.min.js') %}
+    {% do assets.addJs('//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js') %}
+    {% do assets.addJs('//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js') %}
+    {% do assets.addJs('//cdn0.agoda.net/images/sherpa/js/sherpa_init1_08.min.js') %}
+
+    {% block scripts %}{% endblock %}
+
+    {% do assets.addJs('theme://js/functions.min.js') %}
+    {{ assets.js() }}
+</body>
+</html>

@@ -1,0 +1,6 @@
+firstName: 'Utkarsh '
+lastName: Ranjan
+email: utr100@yahoo.co.in
+phone: null
+message: 'Hi, I am interested in an economical beginner ski package in Gulmarg. I would be travelling solo to Gulmarg for 4-5 days in February and would like to learn skiing during my stay. Please provide me with the details of the most affordable package that you can offer me. thanks!'
+

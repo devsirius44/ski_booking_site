@@ -1,0 +1,6 @@
+First Name: Apurva
+Last Name: Jain
+Email: 16apurvajain@gmail.com
+Phone: '8828354058'
+Question and Comments: "How many people travelling together?\n2\n\nHow many people skiing?\n2\n\nYour level of skiing? Beginner, intermediate or advanced?\nBeginner (i.e no experience at all)\nWhat level of comfort you are looking for?\nI don't know what does it means\n\nArrival and departure dates.\n3 January- 6 January\n\nI am looking for the ski packages for beginners with zero experience in skiing in INR terms, \nKindly let me know the details"
+

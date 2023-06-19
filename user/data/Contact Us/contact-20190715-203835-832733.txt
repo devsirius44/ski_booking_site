@@ -1,0 +1,6 @@
+firstName: Sam
+lastName: Watson
+email: sam@taylormadeconcepts.co.nz
+phone: '0221086564'
+message: "Hi there\r\nI'm super keen to go to Gulmarg this coming season. How soon do I need to book for your basic package with a guide and reasonable accommodation. I'm getting to old to be bumming it now lol. Also the dates. Any chance of going sooner than your recommended dates. No biggie but I just wanted to get away for Xmas. No kids at home anymore so I thought I'd have a white Xmas. Look forward to hearing from you.\r\n\r\nRegards Sam"
+

@@ -1,0 +1,6 @@
+firstName: Donny
+lastName: Permana
+email: donivikapermana@gmail.com
+phone: '+62 82260002602'
+message: "Hello, My Name Is Donny and I From Indonesia.\r\nI have plan to go to Gulmarg on July 9th.\r\nCan i play Ski On July consider on that month is Summer??\r\nBest Regard"
+

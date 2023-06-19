@@ -1,0 +1,134 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block customStyles %}
+    <style>
+        @media (min-width: 992px) {
+            #header.header-transparent.header-sticky #header-wrap,
+            #header.header-transparent #header-wrap {
+                background-color: white!important;
+            }
+            #header #header-wrap #logo svg path.skigulmarg-logo {
+                fill: #252525;
+            }
+            #mainMenu nav > ul > li > a {
+                color: #252525;
+            }
+            #mainMenu nav > ul > li > a:hover {
+                color: #262626;
+            }
+            #header .menu-right > ul > li a i,
+            #header .menu-right > ul > li span {
+                color: #252525;
+            }
+
+            #header .menu-right > ul > li.mega-menu-item .title[title="Weather"] {
+                border-right: 1px solid #252525;
+            }
+
+            #header #mainMenu-trigger button .lines,
+            #header #mainMenu-trigger button .lines:before,
+            #header #mainMenu-trigger button .lines:after {
+                background-color: #252525;
+            }
+        }
+
+        section#page-content {
+            height: calc(100vh - 80px);
+        }
+        section#page-content>.container {
+            position: relative;
+            height: 100%;
+        }
+        section#page-content>.container>.row {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* ----------- iPhone 4, 4S, 5, 5S, 5C, 5SE 6, 6+, 6S, 7, 7+, 8, 8+, iPhone X ----------- */
+        /* ----------- Samsung Galaxy S3, Galaxy S4, S5, S6 and Note 3 ----------- */
+        /* ----------- HTC One ----------- */
+        /* ----------- Google Pixel, Pixel XL, Pixel 2 and Pixel 2 XL ----------- */
+        /* ----------- Windows Phone ----------- */
+        /* Landscape */
+        @media only screen
+          and (min-device-width: 320px)
+          and (max-device-width: 640px)
+          and (-webkit-min-device-pixel-ratio: 1)
+          and (orientation: landscape),
+
+          only screen
+          and (min-device-width: 320px)
+          and (max-device-width: 667px)
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (orientation: landscape),
+
+          only screen
+          and (min-device-width: 320px)
+          and (max-device-width: 480px)
+          and (-webkit-min-device-pixel-ratio: 1)
+          and (orientation: portrait),
+
+          only screen and (min-device-width: 384px)
+          and (max-device-width: 854px)
+          and (-webkit-min-device-pixel-ratio: 1)
+          and (orientation: landscape),
+
+          only screen and (min-device-width: 320px)
+          and (max-device-width: 812px)
+          and (-webkit-min-device-pixel-ratio: 3)
+          and (orientation: landscape),
+
+          only screen and (min-device-width: 360px)
+          and (max-device-width: 640px)
+          and (-webkit-min-device-pixel-ratio: 4)
+          and (orientation: landscape),
+
+          only screen and (min-device-width: 600px)
+          and (max-device-width: 960px)
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (orientation: landscape),
+
+          only screen and (min-device-width: 411px)
+          and (max-device-width: 823px)
+          and (-webkit-min-device-pixel-ratio: 2.6)
+          and (orientation: landscape) {
+            section#page-content {
+                height: 100%;
+                padding-top: 20px;
+            }
+            section#page-content>.container>.row {
+                transform: none;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<section id="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="page-error-404"> {{ header.http_response_code }}</div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-left">
+                    <h1 class="text-medium">{{ '404_ERROR.ERROR_MESSAGE'|t }}</h1>
+                    <p class="lead">{{ '404_ERROR.ERROR_MESSAGE_EXTENDED'|t }}</p>
+
+                    <div class="seperator m-t-20 m-b-20"></div>
+
+                    <div class="search-form">
+                        <p>{{ '404_ERROR.PAGE_SEARCH_HEADER'|t }}</p>
+
+                        {% set min_chars = config.get('plugins.simplesearch.min_query_length', 3) %}
+
+                        {% include 'partials/searchbox.html.twig' with {'placeholder': "404_ERROR.PAGE_SEARCH_PLACEHOLDER"|t} %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

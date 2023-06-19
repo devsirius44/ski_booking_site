@@ -1,0 +1,184 @@
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+
+::selection {
+    background: $base-color;
+    color: $white;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: $base-color;
+    /* Firefox */
+    color: $white;
+    text-shadow: none;
+}
+
+::-webkit-selection {
+    background: $base-color;
+    /* Safari */
+    color: $white;
+    text-shadow: none;
+}
+
+:active,
+:focus {
+    outline: none !important;
+}
+
+
+/** Typography **/
+
+html {
+    font-size: 81.25%;
+    @media all and (min-width: 480px){
+        font-size: 100%;
+    }
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.65714286em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $font-family-2;
+    color: $body-color;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $font-family-1;
+    color: $dark;
+    margin: 0;
+    font-weight: 300;
+    small {
+        font-weight: 100;
+    }
+    letter-spacing: 1px;
+}
+
+h1,
+.h1 {
+    font-size: 2em;
+    // line-height: 1.31818182em;
+    &:not(:last-child) {
+        margin-bottom: 0.59090909090909em;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 1.75em;
+    // line-height: 1.36363636em;
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 0.78787878787879em;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 1.5em;
+    // line-height: 1.5em;
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 1.04em;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 1.33em;
+    // line-height: 1.68421053em;
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 0.700842105263158em;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1.12em;
+    // line-height: .83em;
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 0.600842105263158em;
+    }
+}
+
+h6,
+.h6 {
+    font-size: 1em;
+    // line-height: 2.16666667em;
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 0.500842105263158em;
+    }
+}
+
+.lead {
+    font-size: 1.35714286em;
+    line-height: 1.68421053em;
+}
+
+p, li {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 28px;
+    letter-spacing: 0;
+}
+
+p,
+ul,
+ol,
+pre,
+table {
+    margin-bottom: 1.85714286em;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+.font-16 {
+    font-size: 16px;
+}
+
+ul.bullets {
+    list-style: outside;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+strong {
+    font-weight: 600;
+    color: $dark;
+}
+
+a {
+    color: $body-color;
+    text-decoration: underline;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        outline: none;
+        color: $base-color;
+    }
+}

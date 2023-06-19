@@ -1,0 +1,6 @@
+firstName: 'Felix '
+lastName: Bogenschütz
+email: felix.bogenschuetz@web.de
+phone: null
+message: "Is there any possiblity for work at your resort?\r\nIf yes, who is the contact person?\r\nI'm looking forward to hear from you :)"
+

@@ -1,0 +1,282 @@
+
+RewriteOptions inherit
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+## Begin RewriteBase
+# If you are getting 500 or 404 errors on subpages, you may have to uncomment the RewriteBase entry
+# You should change the '/' to your appropriate subfolder. For example if you have
+# your Grav install at the root of your site '/' should work, else it might be something
+# along the lines of: RewriteBase /<your_sub_folder>
+##
+
+# RewriteBase /
+
+RewriteCond %{HTTP_HOST} skigulmarg\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://skigulmarg.com/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www\.skigulmarg\.com [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://skigulmarg.com/$1 [L,R=301]
+
+## End - RewriteBase
+
+## Begin Redirect 301
+
+RewriteEngine On
+
+Redirect 301 /index.html  https://skigulmarg.com
+Redirect 301 /getting-here/about-gulmarg.html  https://skigulmarg.com/gulmarg-ski-resort/about-gulmarg
+Redirect 301 /images/index.html  https://skigulmarg.com/gulmarg-ski-resort/about-gulmarg/images
+Redirect 301 /images/gulmarg-photos.html  https://skigulmarg.com/gulmarg-ski-resort/about-gulmarg/images/photos
+Redirect 301 /images/gulmarg-videos.html  https://skigulmarg.com/gulmarg-ski-resort/about-gulmarg/images/videos
+Redirect 301 /gulmarg-weather/gulmarg-weather.html  https://skigulmarg.com/gulmarg-ski-resort/about-gulmarg/weather
+Redirect 301 /packages-&-hotels/gulmarg-hotels-map/accommodation-map.html  https://skigulmarg.com/gulmarg-ski-resort/about-gulmarg/accommodation-map
+Redirect 301 /to-do/index.html  https://skigulmarg.com/gulmarg-ski-resort/things-to-do
+Redirect 301 /to-do/outdoor.html  https://skigulmarg.com/gulmarg-ski-resort/things-to-do/outdoor-activities
+Redirect 301 /to-do/shopping.html  https://skigulmarg.com/gulmarg-ski-resort/things-to-do/shopping-and-sightseeing
+Redirect 301 /to-do/restaurants.html  https://skigulmarg.com/gulmarg-ski-resort/things-to-do/restaurants-and-cafes
+Redirect 301 /to-do/apres-ski.html  https://skigulmarg.com/gulmarg-ski-resort/things-to-do/apres-ski
+Redirect 301 /getting-here/india-formalities.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/india-formalities
+Redirect 301 /getting-here/travel-insurance.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/travel-insurance
+Redirect 301 /getting-here/flying-to-india.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/flying-to-india
+Redirect 301 /getting-here/getting-to-kashmir/index.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/getting-to-kashmir
+Redirect 301 /getting-here/getting-to-kashmir/by-air.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/getting-to-kashmir/by-air
+Redirect 301 /getting-here/getting-to-kashmir/by-land.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/getting-to-kashmir/by-land
+Redirect 301 /getting-here/about-delhi.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/getting-to-kashmir/about-delhi
+Redirect 301 /getting-here/about-srinagar.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/getting-to-kashmir/about-srinagar
+Redirect 301 /getting-here/getting-to-gulmarg.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/getting-to-gulmarg
+Redirect 301 /getting-here/map-direction.html  https://skigulmarg.com/gulmarg-ski-resort/getting-here/getting-to-gulmarg/map-direction
+Redirect 301 /gulmarg-ski-resort/inbounds/index.html  https://skigulmarg.com/the-mountain/inbounds
+Redirect 301 /gulmarg-ski-resort/inbounds/main-bowl.html  https://skigulmarg.com/the-mountain/inbounds/gondola-bowl
+Redirect 301 /gulmarg-ski-resort/inbounds/surface-lifts.html  https://skigulmarg.com/the-mountain/inbounds/surface-lift
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/index.html  https://skigulmarg.com/the-mountain/out-of-bounds
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/lookers-left.html  https://skigulmarg.com/the-mountain/out-of-bounds/lockers-left
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/lookers-right.html  https://skigulmarg.com/the-mountain/out-of-bounds/lockers-right
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/the-back.html  https://skigulmarg.com/the-mountain/out-of-bounds/the-back
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/monkey-hill.html  https://skigulmarg.com/the-mountain/out-of-bounds/monkey-hill
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/far-far-side.html  https://skigulmarg.com/the-mountain/out-of-bounds/far-far-side
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/babarishi.html  https://skigulmarg.com/the-mountain/out-of-bounds/babarishi
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/tangmarg.html  https://skigulmarg.com/the-mountain/out-of-bounds/tangmarg
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/drang.html  https://skigulmarg.com/the-mountain/out-of-bounds/drang
+Redirect 301 /gulmarg-ski-resort/out-of-bounds/sunshine.html  https://skigulmarg.com/the-mountain/out-of-bounds/sunshine-peak
+Redirect 301 /gulmarg-ski-guides/ski-guides.html  https://skigulmarg.com/the-mountain/ski-guides
+Redirect 301 /gulmarg-ski-resort/kashmir-heliski.html  https://skigulmarg.com/the-mountain/gulmarg-heliski
+Redirect 301 /gulmarg-ski-resort/trail-maps.html  https://skigulmarg.com/the-mountain/gulmarg-trail-map
+Redirect 301 /gulmarg-ski-resort/lift-pass.html  https://skigulmarg.com/the-mountain/ski-lift-tickets
+Redirect 301 /gulmarg-ski-resort/hours-operation.html  https://skigulmarg.com/the-mountain/hours-of-operation
+Redirect 301 /gulmarg-ski-resort/mountain-stats.html  https://skigulmarg.com/the-mountain/mountain-stats
+Redirect 301 /gulmarg-ski-resort/safety.html  https://skigulmarg.com/the-mountain/mountain-safety
+Redirect 301 /packages-&-hotels/gulmarg-ski-packages/economic-packages.html  https://skigulmarg.com/deals-and-packages/powder/ski-bum
+Redirect 301 /packages-&-hotels/gulmarg-ski-packages/comfort-packages.html  https://skigulmarg.com/deals-and-packages/powder/economic
+Redirect 301 /packages-&-hotels/gulmarg-ski-packages/extra-comfort-packages.html  https://skigulmarg.com/deals-and-packages/powder/comfort
+Redirect 301 /packages-&-hotels/gulmarg-ski-packages/deluxe-packages.html  https://skigulmarg.com/deals-and-packages/powder/deluxe
+Redirect 301 /gulmarg-ski-rental/index.html  https://skigulmarg.com/deals-and-packages/rental
+Redirect 301 /gulmarg-ski-rental/ski-rental.html  https://skigulmarg.com/deals-and-packages/rental/ski-rental
+Redirect 301 /gulmarg-ski-rental/snowboard-rental.html  https://skigulmarg.com/deals-and-packages/rental/snowboard-rental
+Redirect 301 /gulmarg-ski-rental/other-rental.html  https://skigulmarg.com/deals-and-packages/rental/other-rental
+Redirect 301 /gulmarg-ski-rental/rental-locations.html  https://skigulmarg.com/deals-and-packages/rental/rental-locations
+Redirect 301 /gulmarg-ski-rental/rental-rates.html  https://skigulmarg.com/deals-and-packages/rental/rental-rates
+Redirect 301 /packages-&-hotels/gulmarg-ski-packages/groups.html  https://skigulmarg.com/deals-and-packages/group
+Redirect 301 /packages-&-hotels/why-book-with-us/why-book-with-us.html  https://skigulmarg.com/deals-and-packages/why-book-with-us
+Redirect 301 /packages-&-hotels/hotels-by-area/index.html  https://skigulmarg.com/lodging/accommodation-by-area
+Redirect 301 /packages-&-hotels/hotels-by-area/ski-in-ski-out.html  https://skigulmarg.com/lodging/accommodation-by-area/hotels-ski-in-ski-out
+Redirect 301 /packages-&-hotels/hotels-by-area/on-the-golf.html  https://skigulmarg.com/lodging/accommodation-by-area/hotels-on-the-golf-course
+Redirect 301 /packages-&-hotels/hotels-by-area/in-the-village.html  https://skigulmarg.com/lodging/accommodation-by-area/hotels-in-the-village
+Redirect 301 /packages-&-hotels/hotels-by-area/srinagar.html  https://skigulmarg.com/lodging/accommodation-by-area/hotels-in-srinagar
+Redirect 301 /packages-&-hotels/hotels-by-type/index.html  https://skigulmarg.com/lodging/accommodation-by-type
+Redirect 301 /packages-&-hotels/hotels-by-type/economic.html  https://skigulmarg.com/lodging/accommodation-by-type/basic-hotels-and-rooms
+Redirect 301 /packages-&-hotels/hotels-by-type/comfort.html  https://skigulmarg.com/lodging/accommodation-by-type/economic-hotels
+Redirect 301 /packages-&-hotels/hotels-by-type/extra-comfort.html  https://skigulmarg.com/lodging/accommodation-by-type/comfort-hotels
+Redirect 301 /packages-&-hotels/hotels-by-type/deluxe.html  https://skigulmarg.com/lodging/accommodation-by-type/deluxe-hotels
+Redirect 301 /FAQ/FAQ-travel.html  https://skigulmarg.com/faq/travel
+Redirect 301 /FAQ/FAQ-safety.html  https://skigulmarg.com/faq/health-and-safety
+Redirect 301 /FAQ/FAQ-snow-skiing.html  https://skigulmarg.com/faq/snow-and-skiing
+Redirect 301 /FAQ/FAQ-equipment.html  https://skigulmarg.com/faq/equipment
+Redirect 301 /FAQ/FAQ-to-do.html  https://skigulmarg.com/faq/things-to-do
+Redirect 301 /FAQ/FAQ-booking.html  https://skigulmarg.com/faq/why-book-with-us
+Redirect 301 /extra/about-us.html  https://skigulmarg.com/extra/about-us
+Redirect 301 /extra/testimonials.html  https://skigulmarg.com/extra/testimonials
+Redirect 301 /extra/links.html  https://skigulmarg.com/extra/links
+Redirect 301 /extra/site-map.html  https://skigulmarg.com/extra/site-map
+Redirect 301 /legal/terms.html  https://skigulmarg.com/legal/terms-of-use
+Redirect 301 /legal/privacy.html  https://skigulmarg.com/legal/privacy-policies
+Redirect 301 /legal/booking-conditions.html  https://skigulmarg.com/legal/booking-conditions
+Redirect 301 /contact-us/feedback.html  https://skigulmarg.com/feedback
+Redirect 301 /contact-us/contact-us.html  https://skigulmarg.com/contact-us
+Redirect 301 /packages-&-hotels/gulmarg-ski-packages/index.html  https://skigulmarg.com/deals-and-packages/powder/comfort
+Redirect 301 /packages-&-hotels/gulmarg-ski-packages/deluxe-package-western-guide.html  https://skigulmarg.com/deals-and-packages/powder/comfort
+Redirect 301 /the-mountain/gulmarg-heliski https://skigulmarg.com/deals-and-packages/powder/heliski
+## End - Redirect 301
+
+# Permanent URL redirect - generated by www.rapidtables.com
+Redirect 301 /contact-us/booking.html https://skigulmarg.com
+
+## Begin - X-Forwarded-Proto
+# In some hosted or load balanced environments, SSL negotiation happens upstream.
+# In order for Grav to recognize the connection as secure, you need to uncomment
+# the following lines.
+#
+# RewriteCond %{HTTP:X-Forwarded-Proto} https
+# RewriteRule .* - [E=HTTPS:on]
+#
+## End - X-Forwarded-Proto
+
+## Begin - Exploits
+# If you experience problems on your site block out the operations listed below
+# This attempts to block the most common type of exploit `attempts` to Grav
+#
+# Block out any script trying to base64_encode data within the URL.
+RewriteCond %{QUERY_STRING} base64_encode[^(]*\([^)]*\) [OR]
+# Block out any script that includes a <script> tag in URL.
+RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+# Block out any script trying to set a PHP GLOBALS variable via URL.
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Block out any script trying to modify a _REQUEST variable via URL.
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Return 403 Forbidden header and show the content of the root homepage
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule .* index.php [F]
+#
+## End - Exploits
+
+## Begin - Index
+# If the requested path and file is not /index.php and the request
+# has not already been internally rewritten to the index.php script
+RewriteCond %{REQUEST_URI} !^/index\.php
+# and the requested path and file doesn't directly match a physical file
+RewriteCond %{REQUEST_FILENAME} !-f
+# and the requested path and file doesn't directly match a physical folder
+RewriteCond %{REQUEST_FILENAME} !-d
+# internally rewrite the request to the index.php script
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule .* index.php [L]
+## End - Index
+
+## Begin - Security
+# Block all direct access for these folders
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(\.git|cache|bin|logs|backup|webserver-configs|tests)/(.*) error [F]
+# Block access to specific file types for these system folders
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(system|vendor)/(.*)\.(txt|xml|md|html|yaml|yml|php|pl|py|cgi|twig|sh|bat)$ error [F]
+# Block access to specific file types for these user folders
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(user)/(.*)\.(txt|md|yaml|yml|php|pl|py|cgi|twig|sh|bat)$ error [F]
+# Block all direct access to .md files:
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule \.md$ error [F]
+# Block all direct access to files and folders beginning with a dot
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule (^|/)\.(?!well-known) - [F]
+# Block access to specific files in the root folder
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(LICENSE\.txt|composer\.lock|composer\.json|\.htaccess)$ error [F]
+## End - Security
+
+</IfModule>
+
+# Begin - Prevent Browsing and Set Default Resources
+Options -Indexes
+DirectoryIndex index.php index.html index.htm
+
+# End - Prevent Browsing and Set Default Resources
+
+# Enable compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+# Leverage browser caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access 1 year"
+  ExpiresByType image/jpeg "access 1 year"
+  ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType text/css "access 1 year"
+  ExpiresByType text/html "access 1 year"
+  ExpiresByType application/pdf "access 1 year"
+  ExpiresByType application/javascript "access 1 year"
+  ExpiresByType application/x-javascript "access 1 year"
+  ExpiresByType application/x-shockwave-flash "access 1 year"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresDefault "access 1 year"
+</IfModule>
+
+<ifModule mod_gzip.c>
+  mod_gzip_on Yes
+  mod_gzip_dechunk Yes
+  mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+  mod_gzip_item_include handler ^cgi-script$
+  mod_gzip_item_include mime ^text/.*
+  mod_gzip_item_include mime ^application/x-javascript.*
+  mod_gzip_item_exclude mime ^image/.*
+  mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

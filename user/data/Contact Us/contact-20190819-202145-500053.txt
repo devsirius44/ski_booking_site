@@ -1,0 +1,6 @@
+firstName: Volker
+lastName: Drechsler
+email: vau.dee@web.de
+phone: null
+message: "Dear Ladies and Gentleman,\r\n\r\na friend of mine, who was already skiing with you, recommended a holiday in Gulmarg to me. So I started to plan a visit to Gulmarg in beginning of 2020.\r\n\r\nA possible start for my holiday would be January 25th, 2020. Could you please give me an advice if a earlier or later start is maybe better because of higher snow quality and snow amount.\r\n\r\nAt the moment I'm travelling alone and I want to stay for 5 or 6 skiing days. I still have to figure out what package is best for me. Can I join a group or should I book a private guide? What package would you recommend for me?\r\n\r\nMy friend recommended a stay at Hotel Highlands Park so I would follow his advice. I would fly Munich airport. Can you offer a package including all flights and transports to Gulmarg?\r\n\r\nAbout me:\r\nI am skiing and 43 yrs old. I was heliskiing in Canada, Uzbekistan, Kirgistan and on Kamtchatka before. My skiing speed is very relaxed. Super steep stuff isn't my thing but if it's necessary... :D\r\n\r\nThat's a lot of questions. If you need more information from me, please let me know.\r\n\r\nThank you very much in advance.\r\n\r\nBest regards,\r\n\r\nVolker Drechsler\r\n"
+

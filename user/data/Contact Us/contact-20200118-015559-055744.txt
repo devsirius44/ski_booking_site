@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'sasha_buzo@mail.ru '
+phone: '86373426988'
+message: "Тук тук. Зиму отменили :) \r\nЗначит это весна... Пора знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

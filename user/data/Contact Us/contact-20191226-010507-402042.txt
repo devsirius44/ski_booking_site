@@ -1,0 +1,6 @@
+firstName: 'Jerry.  '
+lastName: Corral
+email: Jerrycorral13@gmail.com
+phone: '9513789094'
+message: 'Hi Yanik, I''m sorry to have taken long to respond,  I''ve been working and Snowboarding daily  !! And of course, Family and Holidays  !! But Yes I Am coming to Gulmarg  !! I''ll arrive in Srinagar friday Jan.24 12:05 pm in the Afternoon.  I AM looking to book A Safe and Reliable Transportation to the Mountain resort. I do have Accommodation reservations booked at Hotel Pine Spring in Gulmarg.  It Looks like I''m set, any Thoughts  ?'
+

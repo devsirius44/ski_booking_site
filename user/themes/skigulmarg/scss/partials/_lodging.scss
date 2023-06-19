@@ -1,0 +1,30 @@
+.lodging-button,
+.lodging-button:focus,
+.lodging-button:active {
+	margin-left: 10px;
+    text-decoration:none;
+    border-color:$base-color;
+    color:$white;
+    border-radius: 2em;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 4px 8px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-color: $base-color;
+    border-color: $base-color;
+    border-width: 1px;
+    border-style: solid;
+    color: $white;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: none;
+    &:hover {
+        outline: 0 !important;
+        background-color: darken($base-color, 10%);
+        border-color: darken($base-color, 10%);
+        color: $white;
+    }
+}

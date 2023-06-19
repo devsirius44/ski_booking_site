@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'vdohnula@mail.ru '
+phone: '86271359376'
+message: "Добрый день. Зиму отменили :) \r\nПоэтому считай сейчас весна... Самое время знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

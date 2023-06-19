@@ -1,0 +1,52 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block customStyles %}
+    <style>
+        /*@media screen and (max-width: 991px) {*/
+            section#page-content {
+                padding-top: 40px;
+            }
+        /*}*/
+        @media screen and (min-width: 480px) {
+            html[lang='fr'] #header.header-transparent + .fullscreen .container .search {
+                max-width: 462px;
+            }
+        }
+        @media screen and (min-width: 992px) {
+            html[lang='en'] #header.header-transparent + .fullscreen .container .search {
+                margin-bottom: calc(-331px - 80px);
+            }
+        }
+        @media screen and (min-width: 1200px) {none
+            html[lang='fr'] #header.header-transparent + .fullscreen .container .search {
+                top: -270px;
+                margin-bottom: calc(-399px - 80px);
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+
+<!-- Header Search -->
+{% include 'partials/header.search.html.twig' %}
+<!-- end: Search -->
+
+<!-- Content -->
+<section id="page-content">
+    <div class="container">
+        <!-- Booking widget -->
+        {% include 'partials/booking.html.twig' %}
+        <!-- end: Booking widget -->
+    </div>
+    {{ page.content }}
+</section>
+<!-- end: Content -->
+
+<!-- News Modal -->
+{# {% include 'partials/news-modal.html.twig' %} #}
+<!-- end: Modal -->
+
+{% endblock %}
+
+{% block customScripts %}{% endblock %}

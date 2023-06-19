@@ -1,0 +1,6 @@
+firstName: Ketan
+lastName: Gupta
+email: keta.gupta50@yahoo.co.in
+phone: '9999498395'
+message: "Hi\r\nI am planning to visit Srinagar on 30th October with 3 of my friends. Wanted to know if skiing season is open, and if a one day trip to Gulmarg would be sufficient for skiing.\r\nThanks"
+

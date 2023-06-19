@@ -1,0 +1,6 @@
+firstName: Imran
+lastName: Rohitwala
+email: imran.rohitwala@yahoo.in
+phone: '7016149921'
+message: 'I want to know the details of Skiing package for basic level for the month Feb.'
+

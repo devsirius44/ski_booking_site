@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="ie ie6 ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <![endif]-->
+    <meta name="robots" content="index,follow">
+    <meta name="google-site-verification" content="x_Hf0Q-RLfReYruJjnthcI7J-b9gsdtpbdqz2ojUt8k">
+    <!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+    <meta name="author" content="{{ site.author.name|e('html') }}">
+    <meta name="description" content="{% if header.description %}{{ header.description|e('html') }}{% endif %}">
+    <meta name="keywords" content="{{ "KEYWORDS"|t }}{% if header.keywords %}, {{ header.keywords|e('html') }}{% endif %}">
+    <meta name="copyright" content="Skigulmarg.com"/>
+
+    <!-- Document title -->
+    <title>{% if search_results %}{{"SEARCH.RESULTS"|t('html')}} | {% elseif header.title %}{{ header.title|e('html') }} | {% endif %}{{ "TITLE"|t }}</title>
+
+    <!-- Links -->
+    <link rel="canonical" href="{{ base_url }}{% if header.canonical %}{{ header.canonical|e('html') }}{% endif %}">
+    <link rel="alternate" href="{{ base_url }}{% if header.alternate %}{{ header.alternate|e('html') }}{% endif %}" hreflang="{% if header.alternateHrefLang %}{{ header.alternateHrefLang|e('html') }}{% endif %}">
+    <link rel="alternate" href="{{ base_url }}{% if header.alternate2 %}{{ header.alternate2|e('html') }}{% endif %}" hreflang="{% if header.alternateHrefLang2 %}{{ header.alternateHrefLang2|e('html') }}{% endif %}">
+    <link rel="author" href="https://plus.google.com/u/2/113991432665232479994/about" title="Yanik Turgeon on Google+">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url('theme://images/favicon.ico') }}" />
+
+    <!-- Stylesheets & Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600%7CMontserrat:400,500,600,700" rel="stylesheet" type="text/css">
+
+    <!-- Begin Mailchimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <style>
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
+    <!--End mc_embed_signup-->
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css/plugins.css') %}
+        {% do assets.addCss('https://use.fontawesome.com/releases/v5.4.1/css/all.css') %}
+        {% do assets.addCss('theme://css/responsive.css') %}
+        {% do assets.addCss('theme://css/style.min.css') %}
+        {% do assets.addCss('theme://js/plugins/easyzoom/css/easyzoom.css') %}
+        {% do assets.addCss('https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css') %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css') %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53152277-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53152277-1');
+    </script>
+
+    {% block customStyles %}
+        <style>
+            /*@media screen and (max-width: 991px) {*/
+                section#page-content {
+                    padding-top: 40px;
+                }
+            /*}*/
+            @media screen and (min-width: 480px) {
+                html[lang='fr'] #header.header-transparent + .fullscreen .container .search {
+                    max-width: 462px;
+                }
+            }
+            @media screen and (min-width: 992px) {
+                html[lang='en'] #header.header-transparent + .fullscreen .container .search {
+                    margin-bottom: calc(-331px - 80px);
+                }
+            }
+            @media screen and (min-width: 1200px) {
+                html[lang='fr'] #header.header-transparent + .fullscreen .container .search {
+                    top: -270px;
+                    margin-bottom: calc(-399px - 80px);
+                }
+            }
+        </style>
+    {% endblock %}
+
+    <!-- Pageloader fix in case of disabled JavaScript -->
+    <noscript>
+        <style>
+            /* Forcing opacity to 1 because preloader requires JS */
+            body:not(.no-page-loader) #wrapper {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <h1 style="display:none">Skigulmarg.com — El Sitio Web Mas Completo sobre el "Gulmarg Ski Resort"</h1>
+    <noscript>
+        <div class="no-javascript">
+            {{ "NOSCRIPT"|t }}
+        </div>
+    </noscript>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="header-transparent">
+            <div id="header-wrap">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="{{ home_url }}" class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 102.156 70.559">
+                                <title>Skigulmarg.com</title>
+                                <defs>
+                                    <style>
+                                        .skigulmarg-logo {fill: #fff;}
+                                        .cls-3 {clip-path: url(#clip-path);}
+                                        .cls-4 {clip-path: url(#clip-path-2);}
+                                    </style>
+                                    <clipPath id="clip-path">
+                                        <path id="Path_200" data-name="Path 200" class="skigulmarg-logo" d="M0-42.391H87.873V13.487H0Z" transform="translate(0 42.391)"/>
+                                    </clipPath>
+                                    <clipPath id="clip-path-2">
+                                        <path id="Path_214" data-name="Path 214" class="cls-2" d="M0-16.805H102.156v7.7H0Z" transform="translate(0 16.805)"/>
+                                    </clipPath>
+                                </defs>
+                              <g id="LOGO" transform="translate(-85 -11)">
+                                <g id="Group_4" data-name="Group 4" transform="translate(91.864 11)">
+                                  <g id="Group_3" data-name="Group 3" class="cls-3" transform="translate(0 0)">
+                                    <g id="Group_1" data-name="Group 1" transform="translate(0 19.113)">
+                                      <path id="Path_198" data-name="Path 198" class="skigulmarg-logo" d="M20.308,5.106c-.956-1.334-1.868-3.239-3.388-4.039a19.828,19.828,0,0,1-4.5-2.922c-1.6-1.42-4.818-2.2-6.477-3.017C3.466-6.085,2.256-7.108.733-7.374a6.632,6.632,0,0,1-2.976-1.77L-7.792-6.892s5.389.082,5.509.334c.158.349,2.858,2.311,1.406,3.287S-7.62-4.25-9.908-5.849s-11.885-7.18-14.629-9.312-7.776,0-10.75,1.863S-44.887-7.177-45.8-6.91-59.79,7.2-59.79,7.2s-6.173,11.075-3.257,8.743S-59,9.648-56.6,7.654c1.322-1.1,1.915-1.689,3.123-1.838l.08-.082S-50.78,1.521-48.489.026s3.175-3.365,5.067-4.264,3.152-.877,4.745-2.171,1.6-2.573,3.39-3.274c1.6-.62,3.742-1.24,4.686-1.577-3.071,2.288-9.024,7.347-6.75,10.624,3.016,4.342,17.733,3.858,7.842,10.978a176.313,176.313,0,0,1-15.8,10.375s6.153-1.087,8.567-2.656,4.317-1.613,5.887-2.942a26.286,26.286,0,0,1,5.306-3.7c1.81-.842,3.46-2.491,3.46-4.181s1.608-2.611-1.529-4.184-5.72-2.969-7.4-3.377c-3.642-.888-4.5-2.088-3.025-4.351,1.827-2.8,1.773-3.009,1.96-3.168,1.312-1.115,2.776-3.052,5.336-3.46.145.037.293.07.435.119,1.294-.65,7.341,4.88,8.92,5.867,1.6,1,5.662,2.261,8.348,3.591A75,75,0,0,0,.25,1.393L4.841-2.322A7.734,7.734,0,0,1,6.723.2c.287,1.064.112,2.2-1.424,3.655a26.539,26.539,0,0,0-2.518,2.8C1.3,8.317,1.524,8.383.209,9.116c-1.13.631-3.62,1.951-4.068,2.178.523-.219,4.152-.79,5.1-1.114A4.437,4.437,0,0,0,3.35,8.054c.457-.8,1.95-.935,3.431-2.331S7.529,4.463,8.037,2.4,7.983,1.4,9.526,1s4.836,1.71,5.6,2.149,1.028.091,1.867.492S19.32,5.859,20.5,6.7a38.721,38.721,0,0,1,3.543,3.322c-.571-1.992-2.781-3.589-3.734-4.918" transform="translate(63.83 16.049)"/>
+                                    </g>
+                                    <g id="Group_2" data-name="Group 2" transform="translate(65.148 0.001)">
+                                      <path id="Path_199" data-name="Path 199" class="skigulmarg-logo" d="M3.185,2.741,5.4,1.9,5.07,1.047,2.2,2.137-.18.669a1.828,1.828,0,0,0,.043-.4A1.946,1.946,0,0,0-.171-.1L1.975-1.4,4.7.019,5.123-.8,2.9-1.956l2.965-1.8L5.187-4.863,2.4-3.175,2.66-5.527l-.912-.1L1.407-2.574-.845-1.211a1.923,1.923,0,0,0-.592-.327V-4.076l2.619-1.6L.7-6.457l-2.139,1.31V-8.614h-1.3v3.257L-4.616-6.8l-.559.725L-2.74-4.2v2.682a1.9,1.9,0,0,0-.5.3L-5.493-2.611l-.328-3.214-.913.094.256,2.514L-9.16-4.872l-.681,1.107,2.708,1.67-2.1,1.069.417.817,2.6-1.322,2.3,1.42a1.952,1.952,0,0,0-.04.376,2.077,2.077,0,0,0,.04.388l-2.4,1.455L-9.335.93l-.335.854,2.357.92-2.7,1.632.675,1.115L-6.612,3.8l-.011,2.358.919,0,.009-2.917,2.46-1.49a1.806,1.806,0,0,0,.494.29V4.839L-5.3,6.807l.558.73,2-1.54v3.15h1.3V5.966L.576,7.193l.477-.784-2.49-1.517V2.074a1.908,1.908,0,0,0,.562-.307L1.411,3.18,1.393,6.244l.917.005.013-2.506L5.271,5.563l.684-1.109Z" transform="translate(10.01 8.614)"/>
+                                    </g>
+                                  </g>
+                                </g>
+                                <g id="Group_17" data-name="Group 17" transform="translate(85 73.863)">
+                                  <g id="Group_16" data-name="Group 16" class="cls-4" transform="translate(0 0)">
+                                    <g id="Group_13" data-name="Group 13" transform="translate(0 0)">
+                                      <path id="Path_210" data-name="Path 210" class="skigulmarg-logo" d="M-11.042-6.21a2.443,2.443,0,0,1-.544,1.771,2.38,2.38,0,0,1-1.747.549h-6.834V-5.526h5.833a3.28,3.28,0,0,0,.37-.019,1.1,1.1,0,0,0,.313-.082.53.53,0,0,0,.231-.188.564.564,0,0,0,.087-.327.549.549,0,0,0-.12-.37.685.685,0,0,0-.313-.2,1.688,1.688,0,0,0-.4-.076q-.207-.014-.506-.015-.183-.009-1.03-.038-1.328-.048-1.665-.062L-18-6.937c-.2-.009-.369-.021-.51-.033a1.888,1.888,0,0,1-1.531-.7,2.564,2.564,0,0,1-.327-1.434,2.858,2.858,0,0,1,.453-1.762,1.78,1.78,0,0,1,1.5-.587h7.094V-9.82h-5.833A2.9,2.9,0,0,0-17.5-9.8a.978.978,0,0,0-.289.082.515.515,0,0,0-.217.188.591.591,0,0,0-.082.327.472.472,0,0,0,.26.481,1.823,1.823,0,0,0,.722.116h.4q.173.009,1.011.038,1.155.038,1.6.058l.756.033c.205.01.375.021.51.033a1.7,1.7,0,0,1,1.482.77,3.13,3.13,0,0,1,.308,1.463" transform="translate(20.37 11.456)"/>
+                                    </g>
+                                    <g id="Group_14" data-name="Group 14" transform="translate(10.444 0)">
+                                      <path id="Path_211" data-name="Path 211" class="skigulmarg-logo" d="M-7.578,0h3.128L-8.771,3.648l4.88,3.917H-7.308l-4.313-3.917Zm-4.043,7.566h-2.358V0h2.358Z" transform="translate(13.979 0)"/>
+                                    </g>
+                                    <path id="Path_212" data-name="Path 212" class="skigulmarg-logo" d="M50.559-9.238H48.2V-16.8h2.358Z" transform="translate(-26.129 16.804)"/>
+                                    <g id="Group_15" data-name="Group 15" transform="translate(26.46 0.062)">
+                                      <path id="Path_213" data-name="Path 213" class="skigulmarg-logo" d="M-73.966-5.731a3.935,3.935,0,0,0,1.121-.135,1.587,1.587,0,0,0,.718-.423,1.74,1.74,0,0,0,.394-.761,4.576,4.576,0,0,0,.125-1.164,3.514,3.514,0,0,0-.158-1.146,1.535,1.535,0,0,0-.5-.717,2.124,2.124,0,0,0-.866-.38,6.317,6.317,0,0,0-1.328-.116h-6.276v7.566h2.358v-5.68h3.744a.917.917,0,0,1,.607.217.688.688,0,0,1,.26.553.692.692,0,0,1-.269.588,1.016,1.016,0,0,1-.626.2h-3.388l4.552,4.12h2.619l-3.09-2.686Zm8.307-1.858L-62.8-6.163V-5.3a.374.374,0,0,1-.164.314.927.927,0,0,1-.539.12h-4.081a1.258,1.258,0,0,1-.554-.081.379.379,0,0,1-.139-.353V-8.32a.335.335,0,0,1,.164-.28.939.939,0,0,1,.529-.116h6.806v-1.857h-7.066a2.818,2.818,0,0,0-1.876.529,1.94,1.94,0,0,0-.616,1.559V-5a2.5,2.5,0,0,0,.106.794,1.29,1.29,0,0,0,.394.563,1.787,1.787,0,0,0,.529.371,2.755,2.755,0,0,0,.74.192A10.808,10.808,0,0,0-67.46-3q.654.019,1.906.019T-63.643-3a10.981,10.981,0,0,0,1.116-.082,2.973,2.973,0,0,0,.76-.192,1.859,1.859,0,0,0,.554-.371,1.437,1.437,0,0,0,.361-.573,2.591,2.591,0,0,0,.1-.784v-2.59Zm-23.371-2.983L-93.18-3.006h2.618l.7-1.29h0L-89-5.923l.016-.029.19-.362h0l1.252-2.334,1.463,2.724H-88.6L-89.391-4.3h4.181l.693,1.29H-81.9l-4.11-7.566ZM-128.91-6.163V-5.3a.374.374,0,0,1-.164.314.929.929,0,0,1-.539.12H-133.7a1.261,1.261,0,0,1-.554-.081c-.093-.055-.139-.172-.139-.353V-8.32a.336.336,0,0,1,.163-.28.944.944,0,0,1,.53-.116h6.805v-1.857h-7.066a2.823,2.823,0,0,0-1.877.529,1.943,1.943,0,0,0-.616,1.559V-5a2.524,2.524,0,0,0,.106.794,1.3,1.3,0,0,0,.4.563,1.794,1.794,0,0,0,.529.371,2.755,2.755,0,0,0,.741.192A10.778,10.778,0,0,0-133.57-3q.654.019,1.906.019t1.91-.019a10.982,10.982,0,0,0,1.117-.082,2.972,2.972,0,0,0,.76-.192,1.868,1.868,0,0,0,.554-.371,1.438,1.438,0,0,0,.361-.573,2.592,2.592,0,0,0,.1-.784v-2.59h-4.909Zm28.983.038-.029-.038-2.089-4.409h-3.687v7.566h2.194V-8.512h.029l2.791,5.506h1.589l2.753-5.506h.038v5.506h2.185v-7.566h-3.677Zm-18.1.6a.43.43,0,0,1-.188.361,1.038,1.038,0,0,1-.611.139h-3.35a.974.974,0,0,1-.582-.139.43.43,0,0,1-.188-.361v-5.043h-2.32V-5.2a2.973,2.973,0,0,0,.11.867,1.627,1.627,0,0,0,.418.664,3.487,3.487,0,0,0,.544.424,1.8,1.8,0,0,0,.606.2,7.791,7.791,0,0,0,1.055.087q.674.019,2.051.019t2.055-.019a7.743,7.743,0,0,0,1.049-.087,1.808,1.808,0,0,0,.6-.2,3.667,3.667,0,0,0,.543-.429,1.62,1.62,0,0,0,.419-.664A2.971,2.971,0,0,0-115.7-5.2v-5.371h-2.32Zm6-5.043h-2.359v7.566h7.47V-4.835h-5.111Z" transform="translate(136.448 10.572)"/>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+
+                    <!--Header Extras-->
+                    <div class="menu-right">
+                        <ul>
+                            <li id="weather" class="dropdown mega-menu-item"></li>
+                            <li>
+                                <a href="https://www.facebook.com/skigulmarg" class="title" title="Skigulmarg Facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end: Header Extras-->
+
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <button class="lines-button x"> <span class="lines"></span> </button>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+
+                    <!--Navigation-->
+                    <div id="mainMenu" class="menu-left">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#about" style="font-size: 16px; line-height: 36px">{{ "ABOUT.TITLE"|raw|t }}</a>
+                                </li>
+                                <li>
+                                    <a href="#service" style="font-size: 16px; line-height: 36px">{{ "SERVICE.TITLE"|raw|t }}</a>
+                                </li>
+                                <li>
+                                    <a href="#gallery" style="font-size: 16px; line-height: 36px">{{ "GALLERY.TITLE"|raw|t }}</a>
+                                </li>
+                                <li>
+                                    <a href="#faq" style="font-size: 16px; line-height: 36px">{{ "FAQ.TITLE"|raw|t }}</a>
+                                </li>
+                                <li>
+                                    <a href="#contact" style="font-size: 16px; line-height: 36px">{{ "CONTACT.TITLE"|t }}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+
+        <!-- SECTION IMAGE FULLSCREEN -->
+        <section class="fullscreen">
+            {% include 'partials/slider.html.twig' %}
+            <div class="container"> <!--  style="height:1px" -->
+                <div class="search">
+                    <div class="search-content">
+                        <h2 data-animation="fadeInUp" style="line-height:1.2em">
+                          PARA AVENTUREROS QUE QUIEREN ESQUIAR EL HIMALAYA
+                        </h2>
+                        <p data-animation="fadeInUp" data-animation-delay="200" style="line-height:1.5em">
+                            Le ofrecemos un servicio simple, cómodo y profesional, donde puede encontrar respuestas a cualquier pregunta que tenga al hacer su reserva。
+                        </p>
+                        <p data-animation="fadeInUp" data-animation-delay="200" style="line-height:1.5em">
+                            El Sitio Web Mas Completo sobre el "Gulmarg Ski Resort"
+                        </p>
+                        <a href="/" class="btn btn-rounded" style="text-decoration:none;">Gulmarg Ski Resort</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: SECTION IMAGE FULLSCREEN -->
+
+        <!-- Content -->
+        <section id="page-content">
+            {{ page.content }}
+            <div class="container" id="contact">
+                <div class="row">
+                    <h2 class="home-section-header">Hola, si tiene alguna pregunta, deje su Mensaje y le responderemos lo antes posible!</h2>
+                    <div class="separator">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.968 17.761">
+                            <path d="M3.185,2.741,5.4,1.9l-.33-.853L2.2,2.137-.18.669a1.828,1.828,0,0,0,.043-.4A1.946,1.946,0,0,0-.171-.1L1.975-1.4,4.7.019,5.123-.8,2.9-1.956l2.965-1.8L5.187-4.863,2.4-3.175l.26-2.352-.912-.1L1.407-2.574-.845-1.211a1.923,1.923,0,0,0-.592-.327V-4.076l2.619-1.6L.7-6.457l-2.139,1.31V-8.614h-1.3v3.257L-4.616-6.8l-.559.725L-2.74-4.2v2.682a1.9,1.9,0,0,0-.5.3L-5.493-2.611l-.328-3.214-.913.094.256,2.514L-9.16-4.872l-.681,1.107L-7.133-2.1l-2.1,1.069.417.817,2.6-1.322,2.3,1.42a1.952,1.952,0,0,0-.04.376,2.077,2.077,0,0,0,.04.388l-2.4,1.455L-9.335.93l-.335.854,2.357.92-2.7,1.632.675,1.115L-6.612,3.8l-.011,2.358H-5.7L-5.7,3.241l2.46-1.49a1.806,1.806,0,0,0,.494.29v2.8L-5.3,6.807l.558.73,2-1.54v3.15h1.3V5.966L.576,7.193l.477-.784-2.49-1.517V2.074a1.908,1.908,0,0,0,.562-.307L1.411,3.18,1.393,6.244l.917.005.013-2.506,2.948,1.82.684-1.109Z" transform="translate(10.013 8.614)"/>
+                        </svg>
+                    </div>
+                    <div class="col-md-8 col-md-push-2 contact-form">
+                        {% include "forms/form.html.twig" %}
+                    </div>
+                    <div class="col-md-8 col-md-push-2 m-t-40">
+                        <!-- AddToAny BEGIN -->
+                        <h5>Compartir</h5>
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style vcenter">
+                            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                            <a class="a2a_button_wechat"></a>
+                            <a class="a2a_button_line"></a>
+                            <a class="a2a_button_whatsapp"></a>
+                            <a class="a2a_button_skype"></a>
+                            <a class="a2a_button_email"></a>
+                            <a class="a2a_button_copy_link"></a>
+                        </div>
+                        <!-- AddToAny END -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: Content -->
+
+        <!-- Footer -->
+        <footer id="footer" class="footer-light">
+            <div class="red-line"></div>
+            <div class="footer-content">
+                <div class="container" style="background-image:url({{ url('theme://images/logo-grey.svg') }});background-repeat: no-repeat;background-position:right bottom">
+                    <div class="row">
+                        <!-- About -->
+                        <div class="col-sm-12 col-md-4">
+                            <div class="newsletter">
+                                <h4>Un poco de Historia</h4>
+                                <p>
+                                    Yanik fundó SKigulmarg.com en 2007. Ahora tiene mas de una decada de experiencia esquiando en Gulmarg y puede ofrecerle un servicio profesional, seguro, sencillo y conveniente. No pierda su tiempo con agentes externos que jamas han pisado la nieve, unase a Yanik directamente en Gulmarg.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end: About -->
+
+                        <!-- Newsletter -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="newsletter">
+                                <h4>{{ "NEWSLETTER.TITLE"|t }}</h4>
+                                <form action="https://hivermonde.us2.list-manage.com/subscribe/post" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <input type="hidden" name="u" value="8732bcd5b755ecd9f0f0b442b">
+                                    <input type="hidden" name="id" value="c63cbf129c">
+                                    <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="EMAIL" required>
+                                    <div class="buttons">
+                                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">SUSCRIBIRME</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end: Newsletter -->
+
+                        <!-- Social icons -->
+                        <div class="col-sm-4 col-sm-push-2 col-md-3 col-md-push-1 nav-block">
+                            <h4>{{ "Redes Sociales"|t }}</h4>
+                            <div class="social-icons">
+                                <ul>
+                                    <li class="social-facebook">
+                                        <a href="https://www.facebook.com/skigulmarg" title="Facebook" target="_blank">
+                                            <i class="fab fa-facebook" aria-hidden="true" title="Facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-line">
+                                        <a href="https://line.me/R/ti/p/%40myy1153k" title="加入好友" target="_blank">
+                                            <i class="fab fa-line" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-weixin">
+                                        <a title="WeChat" data-target="#wechat" data-toggle="modal" style="cursor:pointer">
+                                            <i class="fab fa-weixin" aria-hidden="true"></i>
+                                        </a>
+                                        <div class="modal fade" id="wechat" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button
+                                                            class="close"
+                                                            type="button"
+                                                            data-dismiss="modal"
+                                                            aria-hidden="true">
+                                                            ×
+                                                        </button>
+                                                        <h4 class="modal-title" style="color: #444444">Scan QR in WeChat App</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="/user/themes/skigulmarg/images/WeChat.jpg" style="margin: 0 auto 40px;display: block;" alt="WeChat">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end: Social icons -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="sponsors">
+                <h4>{{ "Patrocinantes"|t }} </h4>
+                <div class="sponsors-logos">
+                    <a href="https://thinkempire.com/" title="Thinkempire" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.32 31.75">
+                            <defs><style>.thinkempire-logo{fill:#231f20;}</style></defs>
+                            <title>Thinkempire</title>
+                            <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="thinkempire-logo" d="M38.79,29.58H38v2.13h-.45V29.58h-.74v-.46h1.94Z"/><path class="thinkempire-logo" d="M42.47,31.71H42V30.57H40.85v1.12h-.46V29.13h.46v1H42v-1h.46Z"/><path class="thinkempire-logo" d="M44.69,31.71h-.46V29.13h.46Z"/><path class="thinkempire-logo" d="M48.54,31.71h-.4L46.91,30v1.74h-.45V29.13h.45l1.19,1.72V29.13h.44Z"/><path class="thinkempire-logo" d="M52.31,31.71h-.53l-.66-1.34-.49.62v.72h-.46V29.13h.46v1.1l.91-1.1h.6l-.69.84Z"/><path class="thinkempire-logo" d="M55.9,31.71H54V29.13h1.89v.46H54.44v.48h.77v.47h-.77v.71H55.9Z"/><path class="thinkempire-logo" d="M60.08,31.71h-.45V30.13l-.76,1.58-.76-1.58v1.58h-.45V29.13h.45l.76,1.53.76-1.53h.45Z"/><path class="thinkempire-logo" d="M63,30.69H62.3v1h-.46V29.13H63a.89.89,0,0,1,.44.11.75.75,0,0,1,.4.68.73.73,0,0,1-.4.7A1.09,1.09,0,0,1,63,30.69Zm.36-.78a.31.31,0,0,0-.1-.24.39.39,0,0,0-.27-.09H62.3v.64H63a.4.4,0,0,0,.27-.09A.29.29,0,0,0,63.4,29.92Z"/><path class="thinkempire-logo" d="M66.09,31.71h-.46V29.13h.46Z"/><path class="thinkempire-logo" d="M69.94,31.71h-.52l-.42-1h-.69v1h-.46V29.13H69a.88.88,0,0,1,.44.11.75.75,0,0,1,.4.68.74.74,0,0,1-.42.69Zm-.52-1.79a.31.31,0,0,0-.1-.24.4.4,0,0,0-.27-.09h-.73v.64H69a.4.4,0,0,0,.27-.09A.29.29,0,0,0,69.42,29.92Z"/><path class="thinkempire-logo" d="M73.57,31.71H71.64V29.13h1.88v.46H72.11v.48h.77v.47h-.77v.71h1.46Z"/><path class="thinkempire-logo" d="M75.72,31.5a.24.24,0,0,1-.08.18.26.26,0,0,1-.19.08.26.26,0,0,1-.25-.25.25.25,0,0,1,.08-.19.24.24,0,0,1,.18-.08.26.26,0,0,1,.26.26Z"/><path class="thinkempire-logo" d="M79.43,31.18a1.12,1.12,0,0,1-1,.57,1,1,0,0,1-.8-.37,1.51,1.51,0,0,1-.29-1,1.49,1.49,0,0,1,.29-1,1,1,0,0,1,.8-.36,1.12,1.12,0,0,1,1,.57l-.42.21a.68.68,0,0,0-.58-.32.54.54,0,0,0-.46.26,1.08,1.08,0,0,0-.17.6,1.06,1.06,0,0,0,.17.65.54.54,0,0,0,.46.23A.6.6,0,0,0,79,31Z"/><path class="thinkempire-logo" d="M83.23,30.4a1.54,1.54,0,0,1-.29,1,.93.93,0,0,1-.78.37,1,1,0,0,1-.83-.43,1.54,1.54,0,0,1-.26-.91,1.49,1.49,0,0,1,.29-1,1,1,0,0,1,.8-.36,1,1,0,0,1,.77.36A1.48,1.48,0,0,1,83.23,30.4Zm-.46,0a1.11,1.11,0,0,0-.16-.64.51.51,0,0,0-.45-.23.53.53,0,0,0-.46.23,1.08,1.08,0,0,0-.17.64,1.1,1.1,0,0,0,.17.65.53.53,0,0,0,.46.23.51.51,0,0,0,.49-.29A1.23,1.23,0,0,0,82.77,30.41Z"/><path class="thinkempire-logo" d="M87.36,31.71h-.45V30.13l-.76,1.58-.76-1.58v1.58h-.45V29.13h.45l.76,1.53.76-1.53h.45Z"/><path class="thinkempire-logo" d="M13,23.29H.27V3.53H13V6.95H3.7V11.7h7V15.1h-7v4.77H13v3.42Z"/><path class="thinkempire-logo" d="M95.55,23.29H82.83V3.53H95.55V6.95H86.26V11.7h7V15.1h-7v4.77h9.29v3.42Z"/><path class="thinkempire-logo" d="M42.36,23.29H38.95V3.53H50.17L53,6.44v5.75L50.17,15.1h-7.8v8.19Zm0-11.58h6.39l.9-.86v-3l-.9-.86H42.36V11.7Z"/><path class="thinkempire-logo" d="M60.18,23.29h-3.4V3.53h3.4V23.29Z"/><path class="thinkempire-logo" d="M80.48,23.29h-3.9l-4.43-8.18H67.52v8.18H64.1V3.53H75.37l2.91,2.9v5.78l-2.59,2.57,4.8,8.5Zm-13-11.58H74l.85-.79V7.81L74,6.95H67.52V11.7Z"/><path class="thinkempire-logo" d="M35.21,23.29H31.79V12.64L27.23,23.29H24.71L20.14,12.67V23.29H16.73V3.53H20l6,13.79,6-13.79h3.29V23.29Z"/><polygon class="thinkempire-logo" points="118.56 7.52 118.56 18.31 117.68 18.31 117.68 4.01 115.06 0 112.42 4.01 112.42 18.31 111.54 18.31 111.54 7.52 105.98 3.36 105.98 19.26 110.64 23.29 119.46 23.29 124.12 19.26 124.12 3.37 118.56 7.52"/><rect class="thinkempire-logo" x="90.87" y="30.03" width="33.46" height="0.78"/><rect class="thinkempire-logo" y="30.03" width="33.45" height="0.78"/></g></g></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="fotter-bottom">
+                <div class="container">
+                    <div class="languages">
+                        {% include 'partials/langswitcher.html.twig' %}
+                    </div>
+
+                    <div class="copyright">
+                        {{ "Todos los Derechos Reservados"|t }} &copy; {{ 'now'|date('Y') }}
+                        <a href="{{ base_url_absolute }}">Skigulmarg.com</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end: Footer -->
+    </div>
+    <!-- end: Wrapper -->
+
+    <!--Modal Cookie-->
+    <div id="cookieNotify" class="modal-strip modal-bottom cookie-notify" data-delay="1000" data-expire="30" data-name="websiteCookiesPoloWeb">
+        <div class="container">
+            <div class="row" style="position:relative">
+                <div class="col-md-8 text-sm-center sm-m-b-10">
+                    {{ "COOKIES.MESSAGE"|t }}
+                    <a href="{{ base_url_absolute }}{{ "LEGAL.LINK"|t }}" class="text-light">
+                        <span style="display:inline-block">
+                            {{ "COOKIES.MORE"|t }}<i class="fab fa-info-circle m-l-5"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-rounded btn-sm m-r-10 modal-close">
+                        {{ "COOKIES.DECLINE"|t }}
+                    </button>
+                    <button type="button" class="btn btn-light btn-rounded btn-outline btn-sm modal-confirm">
+                        {{ "COOKIES.ACCEPT"|t }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End: Modal Cookie-->
+
+    <!-- Go to top button -->
+    <a id="goToTop"><i class="fas fa-angle-up top-icon"></i><i class="fas fa-angle-up"></i></a>
+
+    <!--Scripts-->
+    {% block javascript_footer %}
+        {% do assets.addJs('theme://js/plugins.js') %}
+        {% do assets.addJs('theme://js/plugins/easyzoom/dist/easyzoom.js') %}
+        {% do assets.addJs('plugins://simplesearch/js/simplesearch.js') %}
+        {% do assets.addJs('//skigulmarg.checkfront.com/lib/interface--32.js') %}
+        {% do assets.addJs('//cdn.jsdelivr.net/momentjs/latest/moment.min.js') %}
+        {% do assets.addJs('//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js') %}
+        {% do assets.addJs('//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js') %}
+        {% do assets.addJs('//cdn0.agoda.net/images/sherpa/js/sherpa_init1_08.min.js') %}
+        {% do assets.addJs('//static.addtoany.com/menu/page.js') %}
+        {% do assets.addJs('theme://js/functions.min.js') %}
+        {% do assets.addJs('theme://js/weather.min.js') %}
+    {% endblock %}
+    {{ assets.js() }}
+    {% block customScripts %}{% endblock %}
+</body>
+</html>

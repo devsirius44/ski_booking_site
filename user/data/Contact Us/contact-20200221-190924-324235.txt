@@ -1,0 +1,6 @@
+firstName: Jayesh
+lastName: Vaviya
+email: jayesh.dh@gmail.com
+phone: '9820164161'
+message: "Hello sir\r\n\r\nPlanned a trip to gulmarg in september 2020\r\n\r\nWill i get to ski in gulmarg in that period ?\r\n\r\nThanks\r\nJayesh"
+

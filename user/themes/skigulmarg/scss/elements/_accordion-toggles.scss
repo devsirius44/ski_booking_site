@@ -1,0 +1,63 @@
+.accordion {
+	.ac-item {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background-color: $white;
+        border-color: $light;
+        border-style: solid;
+        border-width: 1px 1px 0px 1px;
+		.ac-title {
+            margin: 0;
+			&:before {
+				font-family: fontawesome;
+				cursor: pointer;
+                position: absolute;
+                top: 14px;
+                right: 10px;
+                display: block;
+                padding: 3px 6px 2px;
+                color: #ddd;
+                content: "\f054";
+                font-size: 12px;
+                line-height: 12px;
+                -webkit-transition: all 0.25s ease-in-out 0s;
+                transition: all 0.25s ease-in-out 0s;
+			}
+		}
+		&.ac-active .ac-title:before {
+            content:"\f078";
+		}
+	}
+    &:last-child {
+        border-bottom: 1px solid #eee;
+    }
+	.ac-title {
+		position: relative;
+		padding: 12px 30px 12px 15px;
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 2px;
+        border: 0px;
+        background: transparent;
+	}
+	.ac-content {
+		overflow: hidden;
+        padding: 16px 13px;
+	}
+	margin-bottom: 20px;
+    &.pricing {   
+        .ac-item {
+            border: 1px solid $base-color;
+            .ac-title {
+                color: $base-color;
+                &:before {
+                    color: $base-color;
+                }
+            }
+        }
+    }
+}

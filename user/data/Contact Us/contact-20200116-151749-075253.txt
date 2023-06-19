@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'fly28@tut.by '
+phone: '89277589156'
+message: "Добрый день. Зимы нет :) \r\nНу а если весна... Давай знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

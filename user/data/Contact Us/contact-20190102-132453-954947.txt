@@ -1,0 +1,6 @@
+firstName: 'Christophe '
+lastName: Commeau
+email: ccommeau@me.com
+phone: null
+message: 'Hello can you pls confirm availability for deluxe package at khyber, from 6 to 12 Jan one single room?'
+

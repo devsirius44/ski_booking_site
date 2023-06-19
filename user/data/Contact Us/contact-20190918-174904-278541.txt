@@ -1,0 +1,6 @@
+firstName: Daniel
+lastName: Foley
+email: daniel.assertivemedia@gmail.com
+phone: null
+message: "Dear,\r\n\r\nI am working with a Ski and Snowboarding School as part of an outreach campaign. Do you offer paid opportunities with your website? We're happy to pay for a link from existing content or to provide you with content + a payment.\r\n\r\nThe website is niche relevant and is not in direct competition.\r\n\r\nIf you accept a paid link / sponsor please do let me know. If you have a specific charge for a link can you let me know?\r\n\r\nKind Regards,\r\nDaniel"
+

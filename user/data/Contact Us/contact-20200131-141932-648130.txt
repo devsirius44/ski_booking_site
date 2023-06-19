@@ -1,0 +1,6 @@
+firstName: Angelanig
+lastName: Angelanig
+email: daemon8990@mail.ru
+phone: '89817539815'
+message: "Yoo-Hoo friend. \r\nPerfect day for a good date ! \r\nWe need you ;) \r\nhttp://meet-free.club"
+

@@ -1,0 +1,6 @@
+firstName: Arun
+lastName: Gupta
+email: arun@wazihewa.com
+phone: '9871844343'
+message: "Hello team, Skigulmarg,\r\n\r\nWe are wazihewa.com, primarily in trekking business in Nepal Region having offices in Noida and Gurgoan, aggregating adventure activities across all categories to provide one stop solution to all our corporate and overseas clients.\r\n\r\nPlease let us know if we can sell your packages on B2B/TAC basis.\r\n\r\nThanks\r\nArun Gupta\r\nwww.wazihewa.com "
+

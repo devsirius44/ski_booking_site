@@ -1,0 +1,229 @@
+#footer {
+    a {
+        color: $dark-light;
+        font-size: 12px;
+        text-decoration: none;
+        &:hover {
+            color: $white;
+        }
+    }
+    .footer-content {
+        background-color: $dark;
+        padding: 60px 0 40px 0;
+        h4, span {
+            color: $light;
+        }
+        .nav-block {
+            @media (min-width: 480px) and (max-width: 767px)  {
+                width: 50%;
+                float: left;
+            }
+        }
+        .legal {
+            margin-top: 51px;
+            ul {
+                padding: 0;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    a {
+                        display: inline-block;
+                        padding: 10px 20px 10px 0;
+                        @media (min-width: 992px) {
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .social-icons ul {
+            padding: 0;
+            li {
+                list-style: none;
+                display: inline-block;
+                a {
+                    border: 1px solid $dark-light;
+                    color:  $dark-light;
+                    float: left;
+                    height: 32px;
+                    width: 32px;
+                    line-height: 32px;
+                    font-size: 16px;
+                    text-align: center;
+                    margin: 0 4px 4px 0;
+                    border-radius: 4px;
+                    background: transparent;
+                    overflow: hidden;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+                    &:hover {
+                        background-color: $white;
+                    }
+                }
+                &:hover i {
+                    -webkit-animation: toTopFromBottom 0.3s forwards;
+                    -moz-animation: toTopFromBottom 0.3s forwards;
+                    animation: toTopFromBottom 0.3s forwards;
+                }
+            }
+        }
+        .powered-by {
+            margin-bottom: 30px;
+        }
+    }
+    .sponsors {
+        background-color: $silver;
+        text-align: center;
+        padding: 15px 0;
+        h4 {
+            display: inline-block;
+            vertical-align:middle;
+            @media (min-width: 768px) {
+                margin: 0 20px;
+            }
+        }
+        .sponsors-logos {
+            a img,
+            a svg {
+                padding: 0 20px;
+                height: 40px;
+                vertical-align:middle;
+            }
+            @media (min-width: 768px) {
+                display: inline-block;
+            }
+        }
+        @media (max-width: 479px) {
+            display: none;
+        }
+    }
+    .fotter-bottom {
+        background-color: $light;
+        padding: 15px 0;
+        a {
+            color: $body-color;
+            &:hover {
+                color: $base-color;
+            }
+        }
+        .languages {
+            display: block;
+            margin-bottom: 5px;
+            .language-label {
+                font-size: 12px;
+            }
+            .dropdown {
+                display: inline-block;
+                button {
+                    background: transparent;
+                    border: 1px solid $dark-light;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    margin-left: 10px;
+                    padding: 2px 32px 2px 15px;
+                    &:after {
+                        font-family: fontawesome;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 4px;
+                        right: 6px;
+                        display: block;
+                        padding: 3px 6px 2px;
+                        color: $dark-light;
+                        content: "\f078";
+                        font-size: 12px;
+                        line-height: 12px;
+                        @media screen and (min-width: 768px) {
+                            top: 6px;
+                        }
+                    }
+                    &:hover {
+                        color: $base-color;
+                        border-color: $base-color;
+                        &:after {
+                            color: $base-color;
+                        }
+                    }
+                    @media screen and (min-width: 768px) {
+                        padding: 0 32px 0 15px;
+                    }
+                }
+                &.open {
+                    button:after {
+                        top: 7px;
+                        -webkit-transform: rotate(-180deg);
+                        -ms-transform: rotate(-180deg);
+                        transform: rotate(-180deg);
+                        ms-transform: rotate(-180deg);
+                    }
+                }
+                .dropdown-menu {
+                    min-width: calc(100% - 8px);
+                    top: -122px;
+                    left: 9px;
+                    @media screen and (min-width: 768px) {
+                        top: -66px;
+                    }
+                    a {
+                        display: block;
+                        padding: 5px 15px;
+                        @media screen and (min-width: 768px) {
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
+            @media screen and (min-width: 568px) {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+        }
+        .copyright {
+            font-size: 12px;
+            color: $body-color;
+            display: block;
+            @media screen and (min-width: 568px) {
+                display: inline-block;
+                float: right;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes toTopFromBottom {
+    49% {
+        -webkit-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes toTopFromBottom {
+    49% {
+        -moz-transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        -moz-transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+@keyframes toTopFromBottom {
+    49% {
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}

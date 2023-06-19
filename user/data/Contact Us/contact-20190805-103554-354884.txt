@@ -1,0 +1,6 @@
+firstName: Sanjeev
+lastName: Yadav
+email: seo@website-promotion.co
+phone: '7077060205'
+message: "Hi,\r\n\r\nI am Sanjeev \_from a leading Search Engine Optimization (SEO) Company based in India.\r\n\r\nAs per the trends in your industry - over 80% of people search for your products/services online and buy the same.\_\_\_\_\_\_\r\n\r\n1. Would you like to increase the leads / sales generated from your website?\r\n\r\n2. Do you want Google promotion Service in Affordable price?\_\r\n\r\n3. Would you like to be listed at the top of every major search engine such as Google, Yahoo! & Bing for multiple search phrases (keywords) relevant to your products / services?\r\n\r\nIt would be recommended if you go for search engine optimization (SEO) for your website which would increase your web visibility and generate better prospect traffic to your website.\r\n\r\nThere is a simple equation that is applicable to the online world.\r\n\r\nEthical SEO = Better Traffic Higher Sales\r\n\r\nDo let me know if you are interested and it shall be our pleasure to give you Details about our services, Price list and Offers.\r\n\r\nI look forward for your reply.\_\r\n\r\n----------------------\r\n\r\nKind Regards,\r\n\r\nSanjeev Yadav"
+

@@ -1,0 +1,6 @@
+firstName: Jerry
+lastName: Corral
+email: jerrycorral13@gmail.com
+phone: '9513789094'
+message: 'Hi Yanik, Its Jerry Corral,  the American/Californian Snowboarder. I''m touching Base with You on My Possible Travel to Gulmarg Ski Resort. Any Thoughts  ?? Thank You,  Jerry Corral'
+

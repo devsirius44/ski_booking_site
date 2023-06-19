@@ -1,0 +1,6 @@
+firstName: 'nisha '
+lastName: jain
+email: nishajn10@gmail.com
+phone: '9830500074'
+message: "hi,\r\ni am interested for a skiing learning package for my 14 year old daughter.\r\nwe would be coming on 11th march .\r\nplease furnish all lodging ,fooding and learning details as early as possible.\r\nwe live in kolkata."
+

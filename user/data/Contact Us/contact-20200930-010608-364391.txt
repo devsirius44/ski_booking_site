@@ -1,0 +1,6 @@
+firstName: Shaji
+lastName: C
+email: sajidafran@gmail.com
+phone: '7034660066'
+message: "Hi\r\n Im from Kerala, interested in snowboarding classes. Let me know the packages, duration & fee"
+

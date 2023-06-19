@@ -1,0 +1,68 @@
+.table-container {
+    overflow: auto;
+    margin-bottom: 60px;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track:horizontal {
+        background: $light;
+        border-radius: 10px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $base-color;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $base-color;
+    }
+}
+table.table {
+    border-collapse: collapse;
+    width: 100%;
+    thead {
+        tr:first-child {
+            th {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: $base-color;
+                font-family: $font-family-1;
+            }
+        }
+        tr:not(:first-child) {
+            th {
+                font-size: 14px;
+                font-weight: 400;
+                font-family: $font-family-2;
+                padding-top: 0;
+            }
+        }
+    }
+    tbody {
+        border-top: 2px solid $base-color;
+        border-bottom: 2px solid $base-color;
+    }
+    thead > tr > th {
+        border-bottom: none;
+        border-top: none;
+    }
+    thead > tr > th,
+    tbody > tr > th,
+    tfoot > tr > th,
+    thead > tr > td,
+    tbody > tr > td,
+    tfoot > tr > td {
+        padding: 16px 8px;
+        white-space: nowrap;
+        &:not(:last-child) {
+            border-right: 1px solid $light;
+        }
+    }
+    tbody > tr > td {
+        font-size: 14px;
+        border-top: 1px solid $light;
+    }
+}

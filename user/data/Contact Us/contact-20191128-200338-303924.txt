@@ -1,0 +1,6 @@
+firstName: Prachi
+lastName: Maheshwari
+email: prachi91@gmail.com
+phone: '09637415485'
+message: 'Hi. We are looking for a skiing package from Dec 28th to Jan 2nd.'
+

@@ -1,0 +1,27 @@
+// snowforecast.com widget
+#wf-weatherfeed {
+    @media screen and (max-width: 500px) {
+        overflow: scroll;
+        width: 100%!important;
+        overflow: auto;
+        margin-bottom: 60px;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track:horizontal {
+            background: $light;
+            border-radius: 10px;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $base-color;
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $base-color;
+        }
+    }
+}

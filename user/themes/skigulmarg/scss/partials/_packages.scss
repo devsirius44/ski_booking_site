@@ -1,0 +1,106 @@
+.package-item-wrap {
+    background-color: $grey;
+    position: relative;
+    overflow: hidden;
+    &.red {
+        color: $white;
+        background-color: $base-color;
+        h3, a {
+            color: $white;
+        }
+        .btn.btn-rounded.btn-outline:focus,
+        .btn.btn-rounded.btn-outline:active,
+        .btn.btn-rounded.btn-outline {
+            text-decoration:none;
+            border-color:$white;
+            color:$white;
+            &:hover {
+                outline: 0 !important;
+                background-color: darken($base-color, 10%);
+                border-color: darken($base-color, 10%);
+                color: $white;
+            }
+        }
+    }
+}
+.package-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%;
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+    }
+    img {
+        min-width: 100%;
+        height: 100%;
+    }
+}
+.package-description {
+    width: 100%;
+    padding: 30px 20px;
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        color: $body-color;
+    }
+    span {
+        font-size: 13px;
+    }
+    p {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    .package-price {
+        margin-top: 10px;
+        font-size: 13px;
+        span {
+            font-family: $font-family-1;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 16px;
+            color: $dark;
+        }
+    }
+}
+
+.currency-converter {
+    width:100%;
+    height:auto;
+    font-size:16px;
+    background-color: $white;
+    #fxexchangerateAmount {
+        width: calc(100% - 32px)!important;
+        border-radius: 4px!important;
+        border: 1px solid!important;
+        box-shadow: none!important;
+    }
+    #fxspanfm,
+    #fxexchangerateResult {
+        color: $base-color!important;
+    }
+    #fxexchangerateResult + div {
+        width:100%!important;
+        a {
+            color: $body-color!important;
+        }
+    }
+    select {
+        width:100%!important;
+        background-color:transparent;
+        border-radius: 4px!important;
+        border: 1px solid!important;
+        box-shadow: none!important;
+    }
+    #fxexchangerateFrom + div {
+        text-align: center;
+    }
+}

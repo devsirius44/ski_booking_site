@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'omgomglolololo@mail.ru '
+phone: '88881883254'
+message: "Хай. Зима отменяется :) \r\nНу а если весна... Самое время знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

@@ -1,0 +1,16 @@
+email: yanik@skigulmarg.com
+fullname: 'Yanik Turgeon'
+title: 'Site Administrator'
+state: enabled
+hashed_password: $2y$10$1MxbhbO7sFSVJn2/k26h/e9vTshhClXo5kJoPeLsK6HAuW5MyFj16
+language: en
+twofa_enabled: false
+twofa_secret: XRF7ZKS5FMNAWXIVR6P4HFJ6G4U6YRUM
+avatar: {  }
+content_editor: default
+access:
+  site:
+    login: true
+  admin:
+    login: true
+    super: true

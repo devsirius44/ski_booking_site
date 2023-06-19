@@ -1,0 +1,6 @@
+firstName: Timothy
+lastName: Johnson
+email: tim.j.johnson99@gmail.com
+phone: '3032043451'
+message: 'Hello.  How has the conflict with Pakistan escalation effected resort operations?  International travel advisories are saying not to go there.  Is the resort open to visitors? Are tourists getting to Gulmarg OK from Srinagar Airport?  My son Chris Johnson and friends are planning to go to your resort on March 9, 2019 for several days.  What is your opinion regarding safe travel from Srinagar airport and do you have any other advice?  Thanks. Tim Johnson'
+

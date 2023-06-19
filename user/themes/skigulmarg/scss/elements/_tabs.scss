@@ -1,0 +1,396 @@
+.tabs {
+    .resp-tabs-list {
+        margin: 0px;
+        padding: 0px;
+        &.fullwidth li {
+            width: 33.33%;
+            text-align: center;
+        }
+    }
+    .resp-tab-content > p:first-child{
+        margin-top: 0;
+    }
+    .resp-tab-content > p:last-child{
+        margin-bottom: 0;
+    }
+    .resp-tabs-list li {
+        border: 1px solid transparent;
+        display: inline-block;
+        float: left;
+        list-style: none;
+        margin-right: 2px;
+    }
+    .resp-tabs-list li,
+    .resp-accordion {
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 1.4em;
+        margin: 0;
+        padding: 9px 25px 11px;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        .tab-label {
+            color: $body-color;
+            font-weight: 600;
+            text-align: center;
+            display: inline-block;
+            &.lodging {
+                @media screen and (max-width: 479px) {
+                    line-height: 28px;
+                }
+                @media screen and (min-width: 480px) { 
+                    line-height: 44px;
+                }
+            }
+        }
+        &:hover {
+            .tab-label {
+                color: $base-color;
+            }
+        }
+        svg path {
+            fill: $body-color;
+        }
+    }
+    .resp-tabs-list li svg {
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+    .resp-accordion svg {
+        height: 40px;
+        display: inline-block;
+        margin: 0 20px 0 0;
+        padding: 0!important;
+        float: left;
+    }
+    .resp-tabs-list li:hover{
+        background-color: $grey;
+        border-color: $grey $grey $grey;
+        color: $base-color;
+        svg path {
+            fill: $base-color;
+        }
+    }
+    .resp-accordion:hover{
+        background-color: $grey;
+        color: $base-color;
+        svg path {
+            fill: $base-color;
+        }
+        .resp-arrow:after {
+            color: $base-color;
+        }
+    }
+    .resp-tabs-container {
+        background-color: $white;
+        clear: left;
+        padding: 0px;
+    }
+    .resp-accordion {
+        display: none;
+    }
+    .resp-tab-content {
+        display: none;
+        padding: 15px;
+    }
+    li.resp-tab-active {
+        margin-bottom: -1px !important;
+        svg path {
+            fill: $base-color;
+        }
+    }
+    li.resp-tab-active,
+    li.resp-tab-active:hover,
+    .resp-accordion.resp-tab-active,
+    .resp-accordion.resp-tab-active:hover {
+        background-color: $white;
+        border: 1px solid $grey;
+        border-top: 2px solid $base-color;
+        color: $base-color;
+        // cursor: default;
+        svg path {
+            fill: $base-color;
+        }
+        .tab-label {
+            color: $base-color;
+        }
+    }
+    li.resp-tab-active,
+    li.resp-tab-active:hover{
+        border-bottom: 1px solid $white;
+    }
+
+    .resp-content-active,
+    .resp-accordion-active {
+        display: block;
+    }
+
+    .resp-tab-content {
+        border-top: 1px solid $grey;
+    }
+
+    .resp-accordion {
+        border: 1px solid $grey;
+        margin: -1px 0 0 0;
+        .tab-lavel {
+            color: $light;
+        }
+    }
+
+    .resp-accordion:first-child{
+        margin-top: 0;
+    }
+
+    .resp-tab-title:last-child {
+        background: blue;
+        border-bottom: 12px solid $grey!important;
+    }
+    .resp-tab-active span.resp-arrow {
+        color: $base-color;
+    }
+
+    &.tabs-accordion .resp-tab-content {
+        border: none;
+    }
+
+    &.tabs-accordion .resp-accordion {
+        display: block;
+    }
+
+    &.tabs-accordion .resp-tab-active span.resp-arrow {
+        border-bottom-color: $base-color;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .tabs {
+        .resp-tabs-list,
+        .resp-tab-content.resp-tab-content-active.resp-accordion-closed {
+            display: none;
+        }
+
+        .resp-tab-content {
+            border: none;
+        }
+        .resp-accordion.resp-tab-active,
+        .resp-accordion.resp-tab-active:hover {
+            border-color: $base-color transparent transparent;
+        }
+        .resp-accordion {
+            display: block;
+            .tab-label {
+                text-align: left;
+                margin: 2px 0;
+            }
+            .resp-arrow {
+                color: $grey;
+                float: right;
+                margin-top: 3px;
+                &:after {
+                    font-family: FontAwesome;
+                    content: '\f054';
+                    font-size: 14px;
+                    margin-top: 7px;
+                    display: inline-block;
+                }
+            }
+        }
+        .resp-tab-active .resp-arrow:after {
+            content: '\f078';
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .tabs {
+        .resp-tabs-list,
+        .resp-tab-content.resp-tab-content-active.resp-accordion-closed {
+            display: none;
+        }
+
+        .resp-tab-content {
+            border: none;
+        }
+        .resp-accordion.resp-tab-active,
+        .resp-accordion.resp-tab-active:hover {
+            border-color: $base-color transparent transparent;
+            .resp-arrow {
+                color: $base-color;
+            }
+        }
+        .resp-accordion {
+            display: block;
+            .tab-label {
+                text-align: left;
+                margin: 2px 0;
+            }
+            .resp-arrow {
+                color: $grey;
+                float: right;
+                &:after {
+                    font-family: FontAwesome;
+                    content: '\f054';
+                    font-size: 12px;
+                    margin-top: 5px;
+                    display: inline-block;
+                }
+            }
+        }
+        .resp-tab-active .resp-arrow:after {
+            content: '\f078';
+        }
+        .resp-accordion {
+            svg {
+                height: 28px;
+            }
+            .tab-label {     
+                font-size: 10px;
+                line-height: 14px;
+            }
+        }
+        .book-search {
+            padding: 5px 15px;
+            .row {
+                margin-top: 0!important;
+                .col-sm-6 {
+                    width: 100%;
+                    margin-bottom: 5px;
+                }
+                label {
+                    font-size: 13px;
+                    margin-bottom: 0;
+                }
+                input {
+                    padding: 10px 12px 9px;
+                    font-weight: 600;
+                    font-size: 11px;
+                }
+                .bootstrap-select .dropdown-toggle {      
+                    padding: 10px 12px 9px;
+                    font-size: 10px;
+                    font-weight: 600;
+                }
+                .bootstrap-select .dropdown-menu li > a {
+                    padding: 10px 12px 9px;
+                    font-size: 12px;
+                }
+            }
+            button[data-toggle="modal"] {
+                    margin: 20px auto 30px;
+                    font-size: 10px;
+                    padding: 10px 12px;
+            }
+        }
+    }
+}
+
+.sidebar {
+    @media screen and (max-width: 991px) {
+        margin-top: 60px;
+        .tabs {
+            .resp-tabs-list {
+                display: none;
+            }
+            .resp-accordion {
+                display: block;
+            }
+        }
+    }
+    @media screen and (min-width: 992px) {
+        &>h3 {
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .tabs {
+            .resp-tabs-list,
+            .resp-tab-content.resp-tab-content-active.resp-accordion-closed {
+                display: none;
+            }
+
+            .resp-tab-content {
+                border: none;
+            }
+            .resp-accordion.resp-tab-active,
+            .resp-accordion.resp-tab-active:hover {
+                border-color: $base-color transparent transparent;
+                .resp-arrow {
+                    color: $base-color;
+                }
+            }
+            .resp-accordion {
+                display: block;
+                .tab-label {
+                    text-align: left;
+                    margin: 2px 0;
+                    &.lodging {
+                        line-height: 28px;
+                        @media screen and (min-width: 480px) { 
+                            line-height: 44px;
+                        }
+                        @media screen and (min-width: 992px) { 
+                            line-height: 28px;
+                        }
+                    }
+                }
+                .resp-arrow {
+                    color: $grey;
+                    float: right;
+                    &:after {
+                        font-family: FontAwesome;
+                        content: '\f054';
+                        font-size: 12px;
+                        margin-top: 5px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .resp-tab-active .resp-arrow:after {
+                content: '\f078';
+            }
+            .resp-accordion {
+                svg {
+                    height: 28px;
+                }
+                .tab-label {     
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+            .book-search {
+                padding: 5px 15px;
+                .row {
+                    margin-top: 0!important;
+                    .col-sm-6 {
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+                    label {
+                        font-size: 13px;
+                        margin-bottom: 0;
+                    }
+                    input {
+                        padding: 10px 12px 9px;
+                        font-weight: 600;
+                        font-size: 11px;
+                    }
+                    .bootstrap-select .dropdown-toggle {      
+                        padding: 10px 12px 9px;
+                        font-size: 10px;
+                        font-weight: 600;
+                    }
+                }
+                button[data-toggle="modal"] {
+                        margin: 20px auto 30px;
+                        font-size: 10px;
+                        padding: 10px 12px;
+                }
+            }
+        }
+    }
+}
+
+#agoda-container > div {
+    margin: 0 auto;
+}

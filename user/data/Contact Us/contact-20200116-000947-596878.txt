@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'vg_75@tut.by '
+phone: '82925367673'
+message: "Привет. Зима отменяется :) \r\nПоэтому считай сейчас весна... Пора знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

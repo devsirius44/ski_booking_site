@@ -1,0 +1,116 @@
+div.powdernav {
+    text-align: center;
+}
+
+#yanformsec1 input, select {
+    height: 39px;
+}
+ul.powdernavbar {
+    display: inline-block;
+}
+
+a.powdernav {
+    color: red !important;
+    text-decoration: none !important;
+    border-bottom: solid 3px red;
+    margin-right: 30px !important;
+    border-radius : 0px !important;
+}
+
+a.powdernav:focus {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: red !important;
+}
+
+a.powdernav.active {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: red !important;
+}
+
+.yanformsec1op1 {
+    text-align: left !important;
+}
+
+.yanformsec1op1 h4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#yanformsec1 select {
+    width: 100% !important;
+    border: solid 1px red;
+    color: red;
+/*    height: 39px;*/
+}
+
+#yanformsec1 option {
+    color: red;
+}
+
+#yanformsec1::placeholder {
+    color: red;
+}
+
+.yanformsec1op1lb {
+    text-align: left !important;
+}
+
+#yanemail-form {
+    position: relative;
+}
+
+#yanemail-form input,label {
+    width: 100%;
+    margin-top: 9px;
+    height: 39px;
+}
+
+#yanemail-form textarea {
+    width: 100%;
+    margin-top: 9px;
+}
+
+#yanemail-form button {
+    background-color: red;
+    color: white;
+}
+
+#yanemail-form {
+    text-align: left;
+}
+
+
+#yanemail-form ul {
+    transform: translateY(0%) !important;
+}
+
+#yanemail-form .iti {
+    position: relative;
+    display: inline-block;
+}
+
+#yanemail-form input[type=tel] {
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+
+    position: relative;
+    z-index: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 0;
+    border: 1px solid #CCC;
+    width: 270px;
+    height: 35px;
+    /* padding: 6px 12px; */
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+}
+
+#yanemail-form button {
+    margin-top: 9px;
+}

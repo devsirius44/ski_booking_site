@@ -1,0 +1,69 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block customStyles %}
+    <style>
+        @media (min-width: 992px) {
+            #header.header-transparent.header-sticky #header-wrap,
+            #header.header-transparent #header-wrap {
+                background-color: white!important;
+            }
+            #header #header-wrap #logo svg path.skigulmarg-logo {
+                fill: #252525;
+            }
+            #mainMenu nav > ul > li > a {
+                color: #252525;
+            }
+            #mainMenu nav > ul > li > a:hover {
+                color: #262626;
+            }
+            #header .menu-right > ul > li a i,
+            #header .menu-right > ul > li span {
+                color: #252525;
+            }
+
+            #header .menu-right > ul > li.mega-menu-item .title[title="Weather"] {
+                border-right: 1px solid #252525;
+            }
+
+            #header #mainMenu-trigger button .lines,
+            #header #mainMenu-trigger button .lines:before,
+            #header #mainMenu-trigger button .lines:after {
+                background-color: #252525;
+            }
+        }
+
+        section.search-row {
+            padding: 40px 0;
+        }
+        section.search-row:not(:last-child) {
+            padding-bottom: 0;
+        }
+
+        .search-item {
+            margin: 0;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container p-t-80">
+        <h1>{{"SEARCH.RESULTS"|t}}</h1>
+
+        {% include 'partials/searchbox.html.twig' %}
+
+        <p>
+            {% if query %}
+                {% set count = search_results ? search_results.count : 0 %}
+                {% if count == 1 %}
+                    {{ "SEARCH.RESULTS_SUMMARY_SINGULAR"|t(query|e)|raw }}
+                {% else %}
+                    {{ "SEARCH.RESULTS_SUMMARY_PLURAL"|t(query|e, count)|raw }}
+                {% endif %}
+            {% endif %}
+        </p>
+
+        {% for page in search_results %}
+            {% include 'partials/simplesearch_item.html.twig' with {'page':page} %}
+        {% endfor %}
+    </div>
+{% endblock %}

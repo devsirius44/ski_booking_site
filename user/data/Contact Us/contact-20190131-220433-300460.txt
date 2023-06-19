@@ -1,0 +1,6 @@
+firstName: Harriet
+lastName: Oliver
+email: harriet-oliver@outlook.com
+phone: null
+message: "Hello, \r\n\r\nWe are two British friends looking to ski somewhere in India towards the end of February. We will be arriving in Delhi on the 22nd and so likely to fly from there. \r\n\r\nWe are on a longer world trip and so do not have any equipment or clothing with us for skiing. \r\n\r\nIs it possible to create a package that includes skis and clothing, as well as accommodation and instructors? \r\n\r\nI am an experienced skier although my friend hasn’t skied before. \r\n\r\nCheap as possible and looking for about 3/4 days of skiing. \r\n\r\nThank you for your advice. \r\n\r\nHarriet "
+

@@ -1,0 +1,6 @@
+firstName: Jerry
+lastName: Corral
+email: Jerrycorral13@gmail.com
+phone: '9513789094'
+message: 'Hi Yanik, it''s me Jerry Corral,  American, Californian . Yes, it''s about 4 months away,  but I want to get locked in in accommodations. I''ll be travelling with A friend,  who is from India . It seems like landing in Srinagar,  and transport to the Mountains is the only Sketchy part. I want to purchase my airline ticket as soon as possible,  I also got to get a travel Visa. I''ve  Snowboarding since1990 , not sure about how Many days were thinking about guides. Exploring is the Fun part . Maybe a day on the heli !! I''m ready Brother,  let''s do this '
+

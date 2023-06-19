@@ -1,0 +1,6 @@
+firstName: Jerry
+lastName: Corral
+email: jerrycorral13@gmail.com
+phone: '9513789094'
+message: 'Hi, I''ve Waiting on a reply about the Upcoming Winter Season,  I was told I''d hear a Message about the Safety getting to the Resort. I''m A American,  and I''m just checking on the Possibility of Visiting and Snowboarding at the Gulmarg Resort. I''m Looking forward to hearing from You. Thank You,  Jerry Corral'
+

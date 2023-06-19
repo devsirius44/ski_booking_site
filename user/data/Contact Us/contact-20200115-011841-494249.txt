@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'chairolex39@mail.ru '
+phone: '86675128253'
+message: "Парам пам пам. Зиму отменили :) \r\nНу а если весна... Пора знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

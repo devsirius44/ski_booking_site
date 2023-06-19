@@ -1,0 +1,64 @@
+<!-- The Modal -->
+<div id="beginnerModal" class="myModal">
+
+  <!-- Modal content -->
+  <div class="myModal-content">
+    <span class="closeModal">&times;</span>
+    <h5 class="h2">How to Calculate YOUR Savings</h5>
+    <h5>We apologise, you may need to use your calculator.</h5>
+    <p style="text-align:center"><b style="font-size:1.2em; color:red;">Book Now and receive up to 25% discount.</b></p>
+
+    <h6>As Simple as 1, 2, 3...</h6>
+    <ul>
+      <li>Scroll to your desired Package</li>
+      <li>Click "Book Now"</li>
+      <li>Enter your planned Start and End date</li>
+      <li>Click "Book Now"... Again &#128540;</li>
+      <li>Choose YOUR package Option (1, 2... Riders.... etc.)</li>
+      <li>Click "Currency Converter". You will find it a little below (in red)</li>
+      <li>Using your calculator, multiply the conversion by 0.8 (20% discount) <sup>*</sup></li>
+      <li>Voil&agrave;</li>
+    </ul>
+    <p><sup>*</sup> This is an appoximation. Send us a message, we will be happy to send you an EXACT quote.</p>
+  </div>
+
+</div>
+<script type="text/javascript">
+
+// Get the modal
+var modal = document.getElementById("beginnerModal");
+var wrapper = document.getElementById("wrapper");
+var beginnerModalButton = document.getElementById("beginnerModalButton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeModal")[0];
+
+// When the user clicks on <span> (x), close the modal
+// beginnerModalButton.onclick = function() {
+// modal.style.display = "block";
+// }
+// add style to display modal on located
+window.onload = function() { // can also use window.addEventListener('load', (event) => {
+    modal.style.display = "block";
+  };
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+beginnerModalButton.onclick = function() {
+modal.style.display = "block";
+}
+// When the user clicks on <span> (x), Open the modal
+function openModal() {
+modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+</script>

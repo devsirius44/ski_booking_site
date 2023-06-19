@@ -1,0 +1,6 @@
+firstName: Alex
+lastName: Russo
+email: lil.guitarist@gmail.com
+phone: null
+message: "Hi there,\r\n\r\nI'm very interest in booking 4 days skiing for the coming season - specifically booking the Comfort package - Hotel Rosewood between 19th and 24th of Feb with the houseboat on the final night. I just have a few questions if  you don't mind answering:\r\n\r\n1. Is the Airbag avy gear required?\r\n2. what are the best times to arrive in Srinagar and depart Srinagar with respects to the transfers to/from Gulmarg?\r\n3. For the house boat option on the final night, IS there much time allowed in the morning for enjoying the houseboat/Srinagar before the transfer to the airport?\r\n\r\nCheers,\r\n\r\nAlex"
+

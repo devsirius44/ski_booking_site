@@ -1,0 +1,6 @@
+firstName: Louis
+lastName: Pichet
+email: louispichet@gmail.com
+phone: '15142476909'
+message: "Hello, \r\n\r\nI would be interested in a ski package for 4 nights 3 days. I wanted to learn more about what packages would be best for my needs, we would be two people looking for accommodation, ski, boots, poles, skins, avalanche kits and transportation from airport.\r\n\r\nCould you help me figuring out what would be the best package? Travel dates would be from Feb 12 to 16 but still flexible if you advise.\r\n\r\nThank you,\r\n\r\nLouis"
+

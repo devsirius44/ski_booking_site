@@ -1,0 +1,6 @@
+firstName: Colleen
+lastName: Sandaluk
+email: happycolleen@gmail.com
+phone: '97455737302'
+message: 'Are we able to rent snowboards there or do we have to bring our own equipment? '
+

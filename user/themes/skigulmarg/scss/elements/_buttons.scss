@@ -1,0 +1,96 @@
+/* ----------------------------------------------------------------------
+	Buttons
+-------------------------------------------------------------------------*/
+
+//Default base button
+.btn {
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-color: $base-color;
+    border-color: $base-color;
+    border-width: 1px;
+    border-style: solid;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: none;
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    &.btn-sm {
+        font-size: 12px;
+        height: 36px;
+        padding: 0 18px;
+    }
+    //Outline button
+    &.btn-outline {
+        background-color: transparent;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $base-color;
+        color: $base-color;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background-color: $base-color;
+            border-width: 2px;
+            border-style: solid;
+            border-color: $base-color;
+            color: #fff;
+        }
+    }
+    //Rounded button
+    &.btn-rounded {
+        border-radius: 2em ! important;
+    }
+    //Light button
+    &.btn-light {
+        background-color: #ffffff;
+        border-color: #ebebeb;
+        color: #4c5667;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background-color: $base-color;
+            border-color: $base-color;
+            color: #fff;
+        }
+        &.btn-outline {
+            border-color: #ffffff;
+            background-color: transparent;
+            color: #ffffff;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                background-color: #ffffff;
+                color: #4c5667;
+            }
+        }
+    }
+    //Hover statement
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        outline: 0 !important;
+        background-color: darken( $base-color, 10%);
+        border-color: darken( $base-color, 10%);
+        color: #fff;
+    }
+}

@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'missnasty90@mail.ru '
+phone: '87616664625'
+message: "Тук тук. Зима отменяется :) \r\nЗначит это весна... Погнали знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

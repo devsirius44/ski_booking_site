@@ -1,0 +1,399 @@
+#Meta
+TITLE: Snowboard | Ski | Cachemire | Gulmarg | Inde | Skigulmarg.com
+KEYWORDS: Gulmarg, Gulmarg Ski, Station de Ski de Gulmarg, Gulmarg Ski Resort, ski dans l’Himalaya, skier à Gulmarg, Ski en Inde, Himalaya, Cachemire, Skigulmarg.com
+
+#Current language is required for the DarkSky weather API
+CURRENT_LANGUAGE: fr
+
+#Header
+NOSCRIPT: Pour une meilleure expérience sur Skigulmarg.com, activez JavaScript dans votre navigateur..
+
+##Navigation Menu Bar
+
+###Deals and Packages
+PACKAGES:
+  TITLE: Programmes<br>Tout Inclus
+  FOOTER_TITLE: Forfaits
+  LINK: /offres-et-forfaits
+  POWDER:
+    TITLE: Programmes Hors-Piste
+    LINK: /programmes-hors-piste
+    SKI_BUM:
+      TITLE: Programmes « Roots »
+      LINK: /roots
+    ECONOMIC:
+      TITLE: Programmes Économiques
+      LINK: /economiques
+    COMFORT:
+      TITLE: Programmes Confort
+      LINK: /confort
+    DELUXE:
+      TITLE: Programmes Deluxe
+      LINK: /deluxe
+    HELISKI:
+      TITLE: Programmes Héliski
+      LINK: /heliski
+  BEGINNER:
+    TITLE: Programmes pour Débutant
+    LINK: /debutant
+    HOTEL_SHAW_INN:
+      TITLE: Programmes Shaw Inn
+      LINK: /hotel-shaw-inn
+    HOTEL_KHALEEL:
+      TITLE: Programmes Khaleel Palace
+      LINK: /hotel-khaleel-palace
+    HIGHLANDS_PARK:
+      TITLE: Programmes Highlands Park
+      LINK: /highlands-park
+    KHYBER_RESORT:
+      TITLE: Programmes Khyber Resort
+      LINK: /khyber-resort
+  MORE_OPTIONS:
+    TITLE: Plus d'Options
+    CUSTOM:
+      TITLE: Programme « À la Carte »
+      LINK: /programmes-a-la-carte
+    RENATAL:
+      TITLE: Location d'Équipement
+      LINK: /location-equipement
+    GROUP:
+      TITLE: Groupe
+      LINK: /groupes
+    WHY_BOOK_WITH_US:
+      TITLE: Pourquoi Réserver avec Nous?
+      LINK: /pourquoi-reserver-avec-nous
+    JAPAN_SKI_PACKAGES:
+      TITLE: Programmes Ski Japon
+      LINK: /programmes-ski-japon
+
+###Gulmarg Ski Resort
+GULMARG_SKI_RESORT:
+  TITLE: Gulmarg<br>La Station de Ski
+  LINK: /gulmarg-station-de-ski
+  ABOUT:
+    TITLE: À propos de Gulmarg
+    LINK: /a-propos-gulmarg
+    IN_WINTER:
+      TITLE: Gulmarg en Hiver
+      LINK: /en-hiver
+    IN_SUMMER:
+      TITLE: Gulmarg en Été
+      LINK: /en-ete
+    IMAGES:
+      TITLE: Photos & Videos
+      LINK: /images
+    WEATHER:
+      TITLE: Météo Gulmarg
+      LINK: /meteo
+    ACCOMMODATION_MAP:
+      TITLE: Carte de l'Hébergements
+      LINK: /carte-hebergements
+  THINGS_TO_DO:
+    TITLE: À Faire
+    LINK: /a-faire
+    OUTDOOR_ACTIVITIES:
+      TITLE: Activités de Plein Air
+      LINK: /activites-exterieures
+    SHOPPING_AND_SIGHTSEEING:
+      TITLE: Shopping et Tourisme
+      LINK: /achats-et-shopping
+    RESTAURANTS_AND_CAFES:
+      TITLE: Restaurants et Cafés
+      LINK: /restaurants-et-cafes
+    APRES_SKI:
+      TITLE: Après Ski
+      LINK: /apres-ski
+    LEARN_TO_SKI:
+      TITLE: Apprendre à Skier
+      LINK: /apprendre-a-skier
+  GETTING_HERE:
+    TITLE: S'y Rendre
+    LINK: /s-y-rendre
+    INDIA_FORMALITIES:
+      TITLE: Formalités d'entrée en Inde
+      LINK: /formalites-indeiennes
+    TRAVEL_INSURANCE:
+      TITLE: Assurance de Voyage
+      LINK: /assurance-voyage
+    FLYING_TO_INDIA:
+      TITLE: Voyager vers l'Inde
+      LINK: /voyager-vers-l-inde
+    GETTING_TO_KASHMIR:
+      TITLE: Se Rendre au Cachemire
+      LINK: /se-rendre-au-cachemire
+      BY_AIR:
+        TITLE: En Avion
+        LINK: /en-avion
+      BY_LAND:
+        TITLE: Voie Terrestre
+        LINK: /voies-terrestres
+      ABOUT_DELHI:
+        TITLE: A propos de Delhi
+        LINK: /a-propos-delhi
+      ABOUT_SRINAGAR:
+        TITLE: A propos de Srinagar
+        LINK: /a-propos-srinagar
+    GETTING_TO_GULMARG:
+      TITLE: Se Rendre à Gulmarg
+      LINK: /se-rendre-a-gulmarg
+      MAP_DIRECTION:
+        TITLE: Carte et itinéraires
+        LINK: /carte-et-itineraires
+
+###The Mountain
+THE_MOUNTAIN:
+  TITLE: La<br>Montagne
+  LINK: /la-montagne
+  INBOUNDS:
+    TITLE: Terrain Patrouillé
+    LINK: /terrain-patroille
+    MAIN_GONDOLA_BOWL:
+      TITLE: Combe Principal
+      LINK: /combe-principale
+    SURFACE_LIFT:
+      TITLE: Terrain pour Débutant
+      LINK: /terrain-debutants
+  OUT_OF_BOUNDS:
+    TITLE: Terrain Hors-Piste
+    LINK: /hors-piste
+    LOCKERS_LEFT:
+      TITLE: Versant Sud-Est
+      LINK: /versant-sud-est
+    LOCKERS_RIGHT:
+      TITLE: Versant Nord-Ouest
+      LINK: /versant-nord-ouest
+    THE_BACK:
+      TITLE: L'Arrière
+      LINK: /arriere
+    FAR_SIDE:
+      TITLE: Versant Nord
+      LINK: /versant-nord
+    MONKEY_HILL:
+      TITLE: Monkey Hill
+      LINK: /monkey-hill
+    BABARISHI:
+      TITLE: Babarishi
+      LINK: /babarishi
+    TO_TANGMARG:
+      TITLE: Vers Tangmarg
+      LINK: /vers-tangmarg
+    TO_DRANG:
+      TITLE: Vers Drang
+      LINK: /vers-drang
+    SUNSHINE_PEAK:
+      TITLE: Sunshine Peak
+      LINK: /sunshine-peak
+  MORE_OPTIONS:
+    TITLE: Plus d'Options
+    SKI_GUIDES:
+      TITLE: Guides de Ski
+      LINK: /guide-de-ski
+    GULMARG_TRAIL_MAP:
+      TITLE: Carte des Pistes
+      LINK: /gulmarg-carte-des-pistes
+    SKI_LIFT_TICKETS:
+      TITLE: Forfaits Ski
+      LINK: /forfaits-ski
+    HOURS_OF_OPERATION:
+      TITLE: Horaires d'Ouverture
+      LINK: /horaires-ouverture
+    MOUNTAIN_STATS:
+      TITLE: Statistiques de Montagne
+      LINK: /statistiques
+    MOUNTAIN_SAFETY:
+      TITLE: Sécurité en Montagne
+      LINK: /securite-en-montagne
+
+###Lodging
+LODGING:
+  TITLE: Hébergement
+  LINK: /hebergement
+  ACCOMMODATION_BY_AREA:
+    TITLE: Hébergement par Zone
+    LINK: /par-zone
+    HOTELS_SKI_IN_OUT:
+      TITLE: Hôtels Près des Pistes
+      LINK: /hotels-pres-des-pistes
+    HOTELS_ON_THE_GOLF_COURSE:
+      TITLE: Hôtels sur le Golf
+      LINK: /hotels-sur-le-golf
+    HOTELS_IN_THE_VILLAGE:
+      TITLE: Hôtels au Village
+      LINK: /hotels-au-village
+    HOTELS_IN_SRINAGAR:
+      TITLE: Hôtels à Srinagar
+      LINK: /hotels-a-srinagar
+  ACCOMMODATION_BY_TYPE:
+    TITLE: Hébergement par Type
+    LINK: /par-type
+    BASIC_HOTELS_AND_ROOMS:
+      TITLE: Hôtels & Chambres « Roots »
+      LINK: /hotels-chambres-roots
+    ECONOMIC_HOTELS:
+      TITLE: Hôtels Économiques
+      LINK: /hotels-economique
+    COMFORT_HOTELS:
+      TITLE: Hôtels Conforts
+      LINK: /hotels-conforts
+    DELUXE_HOTELS:
+      TITLE: Hôtels Deluxe
+      LINK: /hotels-deluxe
+    HOUSEBOAT:
+      TITLE: Péniche
+      LINK: /peniche
+  MORE_OPTIONS:
+    TITLE: Plus d'options
+    ACCOMMODATION_IN_DELHI:
+      TITLE: Hébergement à Delhi
+      LINK: /hebergement-a-delhi
+    ACCOMMODATION_IN_MUMBAI:
+      TITLE: Hébergement à Mumbai
+      LINK: /hebergement-a-mumbai
+
+###FAQ
+FAQ:
+  TITLE: FAQ
+  LINK: /faq
+  TRAVEL:
+    TITLE: Logistique de Voyage
+    LINK: /logistique
+  HEALTH_AND_SAFETY:
+    TITLE: Santé et sécurité
+    LINK: /securite
+  SNOW_SKIING:
+    TITLE: Ski et Snowboard
+    LINK: /ski-et-neige
+  EQUIPMENT:
+    TITLE: Équipement
+    LINK: /equipement
+  THINGS_TO_DO:
+    TITLE: Après-ski & Activités
+    LINK: /activites
+  WHY_BOOK_WITH_US:
+    TITLE: Pourquoi Réserver avec Nous?
+    LINK: /reservation
+
+###Blog
+BLOG:
+  TITLE: Blog
+  LINK: /fr/blog
+
+##Header search box
+HEADER_SEARCH:
+  H2: Aux voyageurs insatiables<br>qui cherchent a skier l'Himalaya
+  P_TOP: Nous offrons ce que vous recherchez: simplicité, confort et professionalisme. Nous répondons à vos questions et vous permettons de réserver en ligne en toute facilité. 
+  P_BOTTOM: Le site le plus complet sur la Station de Ski Gulmarg.
+
+SEARCH:
+  PLACEHOLDER: "Trouvez votre réponse"
+  RESULTS: "Résultats de la recherche"
+  RESULTS_SUMMARY_SINGULAR: "Recherche : Un résultat trouvé pour <strong>%s</strong>"
+  RESULTS_SUMMARY_PLURAL: "Recherche : %2$s résultats trouvés pour <strong>%1$s</strong>"
+  FIELD_MINIMUM_CHARACTERS: "Veuillez ajouter au moins %s caractères"
+
+
+##Book Widget
+BOOK_WIDGET:
+  SELECT_YOUR_TRIP: 'Sélectionnez votre voyage'
+  DATES: 'Dates de début / fin'
+  CATEGORY: 'Catégorie'
+  BOOK_NOW: 'Réserver'
+  POWDER:
+    TITLE: "Programmes<br>Hors-Piste"
+  BEGINNER:
+    TITLE: "Programmes<br>pour Débutant"
+  LODGING:
+    TITLE: "Hébergement"
+  DATES: 'Dates de début / fin'
+  SEARCHING: 'Disponibilité Recherche...'
+
+##Search
+SHARE: Partager
+
+#Footer
+
+##Packages Links are in the header section of this file
+
+##Quick Links
+EXTRA:
+  TITLE: Information
+  LINK: /extra
+  ABOUT:
+    TITLE: À Propos
+    LINK: /a-propos
+  TESTIMONIALS:
+    TITLE: Livre d'Or
+    LINK: /livre-d-or
+  LINKS:
+    TITLE: Liens
+    LINK: /liens
+  SITE_MAP:
+    TITLE: Plan du Site
+    LINK: /plan-du-site
+
+##Contact Links
+CONTACTS:
+  TITLE: Nous Contacter
+  FORM:
+    TITLE: Contactez Nous
+    LINK: /contactez-nous
+  SKYPE:
+    TITLE: Skype
+  FEEDBACK:
+    TITLE: Partagez vos Commentaires
+    LINK: /commentaires
+
+##Follow
+FOLLOW:
+  TITLE: Suivez Nous
+
+##Powered By
+POWERED:
+  TITLE: Alimenté Par
+
+##Newsletter
+NEWSLETTER:
+  TITLE: Infolettre
+  PLACEHOLDER: Votre Email
+  SUBMIT: S'Abonner
+  U: 8732bcd5b755ecd9f0f0b442b
+  ID: 6ddd860a80
+
+
+##Legal links
+LEGAL:
+  TITLE: Legal
+  LINK: /legal
+  TERMS:
+    TITLE: Conditions d'Utilisation
+    LINK: /conditions-d-utilisation
+  PRIVACY:
+    TITLE: Confidentialité
+    LINK: /confidentialite
+  BOOKING:
+    TITLE: Conditions de Réservation
+    LINK: /conditions-reservation
+
+SPONSORS: PAYER AVEC CRYPTO. Nous acceptons les paiements en crypto-monnaie.
+
+LANGUAGE: Langue
+COPYRIGHT: Tous les droits sont réservés.
+
+COOKIES:
+  MESSAGE: Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site.
+  MORE: Plus d'infos
+  DECLINE: Déclin
+  ACCEPT: J'accept!
+
+#404 ERROR
+404_ERROR:
+  ERROR: Erreur
+  ERROR_MESSAGE: Oups. Il semble que cette page n’existe pas.
+  ERROR_MESSAGE_EXTENDED: La page que vous recherchez a peut-être été supprimée, son nom a été modifié ou est temporairement inaccessible.
+  PAGE_SEARCH_HEADER: S'il vous plaît essayer à nouveau
+  PAGE_SEARCH_PLACEHOLDER: Trouvez ce que vous recherchez
+
+#Coming Soon
+UNDER_CONSTRUCTION:
+  TITLE: La page<br>est en construction
+  BUTTON: De retour Home

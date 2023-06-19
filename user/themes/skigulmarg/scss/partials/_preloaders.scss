@@ -1,0 +1,49 @@
+@-webkit-keyframes snowflake {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+}
+
+@keyframes snowflake {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+}
+
+/* loading option */
+
+.animsition-loading {
+    background-color: $white;
+    z-index: 9999 !important;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .loader {
+        position: fixed;
+        top: calc(50% - 120px);
+        left: calc(50% - 40px);
+        z-index: 100;
+    }
+}
+
+.loader-inner {
+    fill: $base-color;
+    #snowflake {
+        width: 80px;
+        animation-name: snowflake;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;    
+        animation-play-state: running;
+    }
+}

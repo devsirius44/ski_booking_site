@@ -1,0 +1,6 @@
+firstName: Estevao
+lastName: thiesen
+email: estevaothiesen@gmail.com
+phone: '+5521997876567'
+message: "greetings from brazil!\r\nif the pandemic situation allows, I will be around india on december. when does the resort usually opens?\r\nthank you! take care! :)"
+

@@ -1,0 +1,6 @@
+firstName: Niccoholos
+lastName: Niccoholos
+email: borovik.ova045@gmail.com
+phone: '89031234567'
+message: "Hi dear site owner, \r\n \r\nIf you received this letter, it means that your site has a vulnerability and is potentially susceptible to various types of automatic attacks. \r\n \r\nWrite \"I want a report\" to this email - jao.woo@yandex.com and within a few days we will send you information about vulnerabilities that hackers can use to harm your site or server."
+

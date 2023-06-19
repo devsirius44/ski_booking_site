@@ -1,0 +1,6 @@
+firstName: Tim
+lastName: Kellam
+email: kellamtim@gmail.com
+phone: '+447970301201'
+message: 'Hello. Interested in a trip between 2nd - 13th March 2019. I wish to split board. Am British, an experienced rider and skier with touring and backcountry experience and fit. Do your guides have touring gear? Travelling alone probably. Can you quote me a price for fully guided staying at the Rosewood please or your suggestion for “comfort” accommodation. Landing 2nd and flying out 13th. Thanks - Tim Kellam'
+

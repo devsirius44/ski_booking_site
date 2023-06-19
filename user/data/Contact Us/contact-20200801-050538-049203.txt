@@ -1,0 +1,6 @@
+firstName: Fernetak
+lastName: Fernetak
+email: ferneJer@spoilessay.com
+phone: '84736461655'
+message: "Hello my friend. \r\nOur employees wrote to you yesterday maybe... \r\nCan I offer paid advertising on your site?"
+

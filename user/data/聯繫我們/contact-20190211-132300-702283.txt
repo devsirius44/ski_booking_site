@@ -1,0 +1,5 @@
+firstName: April
+email: April_ye@yahoo.com
+subject: 'skiing '
+message: 'Hi, I plan to have a family skiing trip to Gulmarg. My possible time is Mar 16 to Mar 21. Could you kindly advise whether these days are OK for skiing? I cannot choose the date after Mar 17 for packaging booking in your system. Looking forward to your reply.  '
+

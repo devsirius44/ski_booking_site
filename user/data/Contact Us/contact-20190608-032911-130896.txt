@@ -1,0 +1,6 @@
+firstName: Ella
+lastName: Harris
+email: ellaharris@live.com
+phone: '+64274658885'
+message: "Hey I'm looking for ski instructing work at this feild. do you know if its possible to do this as a foreigner?\r\n\r\nI've been too india once before, but never this far north. I have ski instructor qualifications, and experiance. I only speak english."
+

@@ -1,0 +1,6 @@
+firstName: David
+lastName: Morris
+email: david@dmorris.com
+phone: '775-828-3292 w'
+message: "We are very interested in your ski packages.  curious about the cost of a trip in Feb/March of ‘19.  Fully guided trip is of interest with a 3 day ski package, and the houseboat (might want 2 nights), staying at either of your top two hotels are of interest.  My wife does not ski, what is there for non-athletic guest to do?  I am considered an expert skier but after all of these years not a great powder skier.  Age’s.  Myself 70.  Good physical condition but no longer skiing any double black diamond runs.  Will want to rent everything unless advised to bring my own boots, etc. \r\nThanks, David "
+

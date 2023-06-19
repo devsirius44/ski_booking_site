@@ -1,0 +1,6 @@
+firstName: Christoph
+lastName: Perl
+email: christoph.perl@gmx.de
+phone: null
+message: "Hello, this is Christoph from Germany.\r\nMe and three friends are interested in a Powder Package at the beginning of february 2020.\r\nWe would also like to go on a heliski trip maybe for one or two days. Is there any chance to book one day of heliski in adition? And, just in case, book another day during our stay if the snow is great?\r\nBest regards,\r\nChristoph"
+

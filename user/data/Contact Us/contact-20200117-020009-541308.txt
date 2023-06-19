@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'wolkdrumer@yahoo.com '
+phone: '84929967677'
+message: "Привет. Зимы нет :) \r\nЗначит это весна... Самое время знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

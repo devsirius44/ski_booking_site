@@ -1,0 +1,6 @@
+firstName: Jerry
+lastName: Corral
+email: jerrycorral13@gmail.com
+phone: '9513789094'
+message: 'Hi yanik, I''m having trouble with reservations on Shuttle from Airport to Gulmarg  ? Any tips'
+

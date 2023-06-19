@@ -1,0 +1,6 @@
+firstName: Jörg
+lastName: Paetzold
+email: joerg.paetzold@sbg.ac.at
+phone: null
+message: "Hi Yanik, I am thinking about coming to gulmarg in February, and I am wondering how your current snow conditions, temperature and snow pack has been so far this year? I was trying to find some more independent information on this, coz I don't want to fully rely on the report of the gondola...\r\nThx already for your help!\r\nBest wishes from Austria, \r\nJörg "
+

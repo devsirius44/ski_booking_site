@@ -1,0 +1,6 @@
+firstName: Meera
+lastName: Pete
+email: mathi.nsa@gmail.com
+phone: '919894406417 (India)'
+message: 'I love you website and also the packages/resorts, looks very enticing. I tried to call you guys, but my Taiwanese is not good, so I guess it asked me to leave a VM :-). I would like to inquire about Ski lessons for my family. Beginners package for my son and advanced package for adults. We are looking at end of march (21 - 25) and the website did not allow me book the package.'
+

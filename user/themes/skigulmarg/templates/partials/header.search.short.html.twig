@@ -1,0 +1,18 @@
+<!-- SECTION IMAGE FULLSCREEN -->
+<section class="fullscreen">
+    <div class="fullscreen-image short">
+        <img src="{% if header.image %}/user/themes/skigulmarg{{ header.image|e('html') }}{% else %}{{ url('theme://images/slider/1/background-large.jpg') }}{% endif %}" alt="Skigulmarg.com" srcset="{% if header.imageSmall %}/user/themes/skigulmarg{{ header.imageSmall|e('html') }}{% else %}{{ url('theme://images/slider/1/background-small.jpg') }}{% endif %} 480w,{% if header.imageMedium %}/user/themes/skigulmarg{{ header.imageMedium|e('html') }}{% else %}{{ url('theme://images/slider/1/background-medium.jpg') }}{% endif %} 992w,{% if header.image %}/user/themes/skigulmarg{{ header.image|e('html') }}{% else %}{{ url('theme://images/slider/1/background-large.jpg') }}{% endif %} 1281w" sizes="(max-width: 480px) 480px,(max-width: 991px) 992px,1281px">
+    </div>
+    <div class="container"> <!--  style="height:1px" -->
+        <div class="search short">
+            <div class="search-content">
+                <h3 data-animation="fadeInUp" data-animation-delay="200" style="font-size:1em;line-height:1.5em;text-transform:uppercase">
+                    {{ "HEADER_SEARCH.P_BOTTOM"|t }}
+                </h3>
+
+                {% include 'partials/searchbox.html.twig' with {'placeholder': "SEARCH.PLACEHOLDER"|t} %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: SECTION IMAGE FULLSCREEN -->

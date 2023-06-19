@@ -1,0 +1,131 @@
+.home-section-header {
+	color: $base-color;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.home-notification {
+	margin: -35px 1% 50px;
+	padding: 30px;
+	text-align: center;
+	border: 1px solid #c91100;
+	border-radius: 4px;
+}
+
+.about-bottom__left {
+	margin-bottom: 40px;
+	@media (min-width: 768px) {
+		margin-top: 40px;
+	}
+	@media (min-width: 1200px) {
+		margin-top: 80px;
+	}
+}
+
+.about-bottom__center {
+	margin: 20px auto 60px;
+	@media (min-width: 400px) and (max-width: 600px) {
+		width: 75%;
+	}
+	@media (min-width: 600px) and (max-width: 767px) {
+		width: 50%;
+	}
+	@media (min-width: 768px) {
+		margin: 20px 0;
+	}
+	img {
+		border-radius: 50%;
+		width: 100%;
+	}
+}
+
+.about-bottom__right {
+	margin-bottom: 40px;
+	@media (min-width: 768px) {
+		margin: 40px 0;
+	}
+	@media (min-width: 1200px) {
+		margin-top: 80px;
+	}
+}
+
+.gulmarg-in-winter {
+	background-image: url(/user/themes/skigulmarg/images/home/gulmarg_in_winter-small.jpg);
+	@media screen and (min-width: 480px) {
+		background-image: url(/user/themes/skigulmarg/images/home/gulmarg_in_winter-medium.jpg);
+	}
+	@media screen and (min-width: 992px) {
+		background-image: url(/user/themes/skigulmarg/images/home/gulmarg_in_winter-large.jpg);
+	}
+	background-position: top;
+	background-size: cover;
+	color: $white;
+}
+
+.video {
+	background-image: url(/user/themes/skigulmarg/images/home/cn/pow.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding: 200px 0 60px;
+}
+
+.video-alternative {
+	background-image: url(/user/themes/skigulmarg/images/video.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding: 150px 0;
+	.video-overlay {
+		& + div {
+			.video-play {
+				color: $base-color;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.video-overlay {
+	background-color: $body-color;
+	opacity: .1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	& + div {
+		position: relative;
+		z-index: 2;
+		text-align: center;
+		.video-play {
+			color: $white;
+			display: inline-block;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		div.video-description {
+			margin-top: 120px;
+			text-align: right;
+			h3 {
+				color: $white;
+				font-weight: 600;
+				font-size: 18px;
+				margin-bottom: 10px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				a {
+					color: $white;
+				}
+			}
+			h4 {
+				color: $white;
+				font-weight: 300;
+				font-size: 14px;
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+}

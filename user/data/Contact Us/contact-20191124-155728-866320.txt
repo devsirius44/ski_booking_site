@@ -1,0 +1,6 @@
+firstName: Dennis
+lastName: Perpetua
+email: dennis@qualityguestposts.com
+phone: null
+message: "Hello, \r\n\r\nI tried to get in touch a few days ago, but didn't get any response. I wonder if you received my message? \r\n\r\nMy name is Dennis Perpetua and I'm the Blog Outreach manager at qualityguestposts.com. I saw your blog and decided to get in touch, because I think that a lot of our clients will be interested in regular article placements, either paid guest posts (we provide an article) or sponsored content (you/your team write it for us). \r\n\r\nThis could potentially bring some good regular income for you or you business. \r\n\r\nWould you be interested?\r\n\r\nP.S.: If you don't want me to get in touch again, please let me know. \r\n\r\n\r\nKind Regards, \r\n\r\nDennis Perpetua\r\nBlogger Outreach Manager, \r\nQualityGuestPosts.com"
+

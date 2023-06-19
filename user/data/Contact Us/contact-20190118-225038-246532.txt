@@ -1,0 +1,6 @@
+firstName: Kaiden
+lastName: Maxwell
+email: bestchiropractor@gmail.com
+phone: '+6581536359'
+message: "Hi there, \r\nI'm interested in the affordable beginner package for Hotel Shaw for end feb or beginning march. However, upon google maps search it appears this hotel is permanently closed. \r\nIs this so? \r\nIf so, what's your next option at comparable rate? \r\n\r\nthank you. \r\n\r\nKaiden"
+

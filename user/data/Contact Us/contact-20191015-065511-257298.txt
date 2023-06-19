@@ -1,0 +1,6 @@
+firstName: Rachna
+lastName: Shah
+email: raah4u@gmail.com
+phone: null
+message: "This is with reference to Taj Irshad, Gulmarg he is enquiring about the transfer of money from your end. His internet is not available as yet but his phone is working you can reach him at +919682553589. If not, you can reply to my email and I shall convey your response to him\r\nThanks"
+

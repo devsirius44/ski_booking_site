@@ -1,0 +1,6 @@
+firstName: 'Sai Ram Reddy'
+lastName: Gayam
+email: gayamsairam@gmail.com
+phone: '+18164920444'
+message: "Dear Team,\r\n\r\nI am planning a visit to India in February (17th thru March 10th).\r\n\r\nCan you please tell me if it is the best time to Ski with you? and also, I am not an expert but confident enough to  ski any groomed hill (Blue and Black level). Could you please let me know if you offer packages for people at my skill level?\r\n\r\nThank you.\r\n\r\nFeel free to revert if you have any questions."
+

@@ -1,0 +1,29 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+<!-- Header Search -->
+{% include 'partials/header.search.short.html.twig' %}
+<!-- end: Search -->
+
+<!-- Breadcrumbs -->
+{% include 'partials/breadcrumbs.html.twig' %}
+<!-- end: Breadcrumbs -->
+
+<!-- Content -->
+<section id="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-push-0 col-md-push-2 col-lg-push-1 col-md-8 col-lg-10">
+                {{ page.content }}
+            </div>
+
+            <div id="contact-form" class="col-md-8 col-md-push-2 contact-form">
+                {% include "forms/form.html.twig" %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+

@@ -1,0 +1,6 @@
+firstName: Christian
+lastName: Nielsen
+email: chr.staerkaer@gmail.com
+phone: '+917060252732'
+message: "Hello Skigulmarg\r\nI was recommended to contact you by Himalayan extreme company in Manali, because I was asking about snowboarding for beginners in Kashmir and Jammu. Is this possible in April? Is this possible in may? \r\nThey said to ask you, since the resorts closes middle of March, and what my friend and I are really looking for is the scenic of Himalayan mountains, safe snowboarding but in the mountains, a bit of trekking, active and relaxed. We have both tries snowboarding one-three days before. Period of time for about a week, afterwards to go to leh-ladakh for Vipassana meditation. If this is not something you normally do, maybe you know someone who does this snowboarding-camping-trekking ?\r\nBest regards and happy days, Chris"
+

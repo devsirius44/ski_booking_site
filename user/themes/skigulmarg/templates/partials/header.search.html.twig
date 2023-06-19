@@ -1,0 +1,24 @@
+<!-- SECTION IMAGE FULLSCREEN -->
+<section class="fullscreen">
+    <!-- Slider -->
+    {% include 'partials/slider.html.twig' %}
+    <!-- Slider -->
+    <div class="container"> <!--  style="height:1px" -->
+        <div class="search">
+            <div class="search-content">
+                <h3 data-animation="fadeInUp" style="font-size:1.3em;line-height:1.5em;text-transform:uppercase">
+                    {{ "HEADER_SEARCH.H2"|raw|t }}
+                </h3>
+                <p data-animation="fadeInUp" data-animation-delay="200" style="line-height:1.5em">
+                    {{ "HEADER_SEARCH.P_TOP"|t }}
+                </p>
+                <p data-animation="fadeInUp" data-animation-delay="200" style="line-height:1.5em">
+                    {{ "HEADER_SEARCH.P_BOTTOM"|t }}
+                </p>
+
+                {% include 'partials/searchbox.html.twig' with {'placeholder': "SEARCH.PLACEHOLDER"|t} %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: SECTION IMAGE FULLSCREEN -->

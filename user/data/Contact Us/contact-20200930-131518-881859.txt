@@ -1,0 +1,6 @@
+firstName: Martin
+lastName: Hällgren
+email: martin_hellgren123@hotmail.com
+phone: '+46702907808'
+message: "Hello! \r\nA couple of friends and I have hade a recent interest in traveling to Gulmarg to go skiing. We are not beginners but not experts by any means. I've found it diffucult to find information as what the whole trip might cost. It's diffucult since there are that much tourism if you compare to Japan for example.\r\nWe are interested to travel til the 2022 season. Is it possible to book the entire trip with you or at least get som crucial tips, do and do-nots etc. Also a estimated price so we get a clue of that? \r\nSome facts to go by if so: we are 3 - 4 people, around our 20's and are skiers based in Sweden. \r\nBest regards, Martin"
+

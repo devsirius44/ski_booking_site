@@ -1,0 +1,6 @@
+firstName: aman
+lastName: bhaniramka
+email: bhaniramkaaman@gmail.com
+phone: '916'
+message: 'I wanted to know the packages for doing a full course of snowboarding. beginner course but I want to learn for a long time for about 2 weeks. what is your recommendation and what do you suggest for first timers '
+

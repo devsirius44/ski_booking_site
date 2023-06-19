@@ -1,0 +1,51 @@
+{#  <div class="fullscreen-image">
+    <img src="{% if header.image %}/user/themes/skigulmarg{{ header.image|e('html') }}{% else %}{{ url('theme://images/slider/1/background.jpg') }}{% endif %}" alt="Skigulmarg.com">
+</div> #}
+<div class="fullscreen-image">
+    <div class="inspiro-slider arrows-small arrows-creative" data-height-xs="360">
+        <!-- Slide 1 -->
+        <img class="slide kenburns" 
+             srcset="{{ url('theme://images/slider/1/background-small.jpg') }} 480w,
+                     {{ url('theme://images/slider/1/background-medium.jpg') }} 992w,
+                     {{ url('theme://images/slider/1/background-large.jpg') }} 1281w"
+             sizes="(max-width: 480px) 480px,
+                    (max-width: 991px) 992px,
+                    1281px"
+             src="{{ url('theme://images/slider/1/background-large.jpg') }}"
+             alt="Skigulmarg.com">
+        <!-- end: Slide 1 -->
+        <!-- Slide 2 -->
+        <img class="slide kenburns" 
+             srcset="{{ url('theme://images/slider/2/backshi-small.jpg') }} 480w,
+                     {{ url('theme://images/slider/2/backshi-medium.jpg') }} 992w,
+                     {{ url('theme://images/slider/2/backshi-large.jpg') }} 1281w"
+             sizes="(max-width: 480px) 480px,
+                    (max-width: 991px) 992px,
+                    1281px"
+             src="{{ url('theme://images/slider/2/backshi-large.jpg') }}" 
+             alt="Skigulmarg.com">
+        <!-- end: Slide 2 -->
+        <!-- Slide 3 -->
+        <img class="slide kenburns" 
+             srcset="{{ url('theme://images/slider/3/bowls-small.jpg') }} 480w,
+                     {{ url('theme://images/slider/3/bowls-medium.jpg') }} 992w,
+                     {{ url('theme://images/slider/3/bowls-large.jpg') }} 1281w"
+             sizes="(max-width: 480px) 480px,
+                    (max-width: 991px) 992px,
+                    1281px"
+             src="{{ url('theme://images/slider/3/bowls-large.jpg') }}" 
+             alt="Skigulmarg.com">
+        <!-- end: Slide 3 -->
+        <!-- Slide 4 -->
+        <img class="slide kenburns" 
+             srcset="{{ url('theme://images/slider/4/hima-small.jpg') }} 480w,
+                     {{ url('theme://images/slider/4/hima-medium.jpg') }} 992w,
+                     {{ url('theme://images/slider/4/hima-large.jpg') }} 1281w"
+             sizes="(max-width: 480px) 480px,
+                    (max-width: 991px) 992px,
+                    1281px"
+             src="{{ url('theme://images/slider/4/hima-large.jpg') }}" 
+             alt="Skigulmarg.com">
+        <!-- end: Slide 4 -->
+    </div>
+</div>

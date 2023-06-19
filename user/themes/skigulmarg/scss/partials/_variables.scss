@@ -1,0 +1,40 @@
+/* Colors */
+$base-color:    #C91100;
+$body-color:    #444444;
+
+$primary-color: #26B8F3;
+$success-color: #81c868;
+$info-color:    #34d3eb;
+$warning-color: #ffbd4a;
+$danger-color:  #c30000;
+
+$white:         #ffffff;
+$black:         #000000;
+$grey:          #F2F2F4;
+$dark:          #252525;
+$darker:        #292929;
+$dark-light:    #9d9d9d;
+$light:         #eeeeee;
+$dark-grey:     #262626;
+$silver:        #cccccc;
+
+/* Typography */
+$font-family-1: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+$font-family-2: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+
+$menu-font:     $font-family-2;
+
+/* Header */
+$header-height:      80px;
+$header-line-height: 80px;
+
+/* Side Panel */
+$side-panel-width: 300px;
+
+/* Margins */
+$default-margin: 14px;
+
+/* Transitions */
+$transition-ease: all 0.3s ease;
+$transition-ease-in: all 0.3 ease-in;
+$transition-ease-out: all 0.3 ease-out;

@@ -1,0 +1,6 @@
+firstName: 'Sharun '
+lastName: Srinivas
+email: sharunsrinivas7444@gmail.com
+phone: '9482200505'
+message: "I would like to book a solo Ski Training for myself. \r\n\r\nI'd appreciate if you could help me choose the best option."
+

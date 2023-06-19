@@ -1,0 +1,6 @@
+firstName: KellyErara
+lastName: KellyErara
+email: oovabol@gmail.com
+phone: '81832627936'
+message: "Bye friend. \r\nCoronavirus attacks !!! \r\nBest day for a ideal meeting in the distance ! \r\nhttp://meet-free.club"
+

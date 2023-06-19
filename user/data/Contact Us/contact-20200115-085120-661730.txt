@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'pooooppp@gmail.com '
+phone: '86846616362'
+message: "Хоба. Зима отменяется :) \r\nНу а если весна... Самое время знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

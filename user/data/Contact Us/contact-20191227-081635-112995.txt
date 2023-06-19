@@ -1,0 +1,6 @@
+firstName: Ben
+lastName: Hurst
+email: ben964200@gmail.com
+phone: '+85296858069'
+message: "Hello SkiGulmarg,\r\nMy girlfriend and I wish to come to Gulmarg in late February and early March. We would like to stay for 14 days, with AT LEAST 11 of those days being skiing days.\r\nWe can confirm dates as soon as we book a package. Can you please show me some package prices? Ski Bum package, and all 3 levels from economy to luxury package prices as well, please. Also, please contact me by WhatsApp, Viber, or Signal so we could have a voice call, which would be really helpful:)\r\nI'll look forward to hewaring from you....can't wait to get to Gulmarg!!!!!!\r\nThank you,\r\n\r\nBen."
+

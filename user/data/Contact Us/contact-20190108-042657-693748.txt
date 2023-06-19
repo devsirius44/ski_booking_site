@@ -1,0 +1,6 @@
+firstName: Nikita
+lastName: Nikita
+email: nikita@test.com
+phone: null
+message: 'This is a test email'
+

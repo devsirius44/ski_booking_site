@@ -1,0 +1,6 @@
+firstName: Sunil
+lastName: Uddaraju
+email: sunil_325@yahoo.com
+phone: '9010211111'
+message: "Hi , we already have a reservation at the khyber hotel from Feb 7th to 10th . We are a group of 6 adults and 4 kids (ages 2 , 6 , 6 and 10) . All first timers . Can you suggest for us what would be a good option. We are looking to ski on 8th and 9th February.\r\nThanks and regards"
+

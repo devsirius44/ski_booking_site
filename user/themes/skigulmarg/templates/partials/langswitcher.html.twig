@@ -1,0 +1,68 @@
+<span class="language-label">{{ "LANGUAGE"|t }}: </span>
+<div class="dropdown">
+    <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {% set current_lang = grav.language.getActive %}
+        {% if current_lang == '' %}
+            English
+        {% elseif current_lang == 'fr' %}
+            Français
+        {% elseif current_lang == 'zh-tw' %}
+        繁體中文
+        {% elseif current_lang == 'zh-cn' %}
+        简体中文
+        {% elseif current_lang == 'es' %}
+            Español
+        {% endif %}
+    </button>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        {% for language in langswitcher.languages %}
+
+            {% set show_language = true %}
+            {% if language == langswitcher.current %}
+                {% set lang_url = page.url %}
+                {% set active_class = ' active' %}
+            {% else %}
+                {% set base_lang_url = base_url_simple ~ grav.language.getLanguageURLPrefix(language) %}
+                {% set lang_url = base_lang_url ~ langswitcher.page_route ~ page.urlExtension %}
+                {% set untranslated_pages_behavior = grav.config.plugins.langswitcher.untranslated_pages_behavior %}
+                {% if untranslated_pages_behavior != 'none' %}
+                    {% set translated_page = langswitcher.translated_pages[language] %}
+                    {% if (not translated_page) or (not translated_page.published) %}
+                        {% if untranslated_pages_behavior == 'redirect' %}
+                            {% set lang_url = base_lang_url ~ '/' %}
+                        {% elseif untranslated_pages_behavior == 'hide' %}
+                            {% set show_language = false %}
+                        {% endif %}
+                    {% endif %}
+                {% endif %}
+                {% set active_class = '' %}
+            {% endif %}
+
+            {% if show_language %}
+                {% if language == 'en' and current_lang != '' %}
+                    <a class="dropdown-item" href="{{ lang_url ~ uri.params }}" title="{{ native_name(language) }}">
+                        {{ native_name(language) }}
+                    </a>
+                {% elseif language == 'fr' and current_lang != 'fr' %}
+                    <a class="dropdown-item" href="{{ lang_url ~ uri.params }}" title="{{ native_name(language) }}">
+                        {{ native_name(language) }}
+                    </a>
+                {% elseif language == 'zh-tw' and current_lang != 'zh-tw' %}
+                    <a class="dropdown-item" href="{{ lang_url ~ uri.params }}" title="{{ native_name(language) }}">
+                        繁體中文
+                    </a>
+                {% elseif language == 'zh-cn' and current_lang != 'zh-cn' %}
+                    <a class="dropdown-item" href="{{ lang_url ~ uri.params }}" title="{{ native_name(language) }}">
+                        简体中文
+                    </a>
+                {% elseif language == 'es' and current_lang != 'es' %}
+                    <a class="dropdown-item" href="/es" title="{{ native_name(language) }}">
+                        {{ native_name(language) }}
+                    </a>
+                {% endif %}
+            {% endif %}
+
+        {% endfor %}
+    </div>
+</div>

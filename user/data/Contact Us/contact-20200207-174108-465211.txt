@@ -1,0 +1,6 @@
+firstName: KellyErara
+lastName: KellyErara
+email: adirizy@gmail.com
+phone: '87857724435'
+message: "Hey pal. \r\nCoronavirus attacks !!! \r\nBest day for a ideal meeting remotely ! \r\nhttp://meet-free.club"
+

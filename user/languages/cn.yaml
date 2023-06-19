@@ -1,0 +1,76 @@
+#Meta
+TITLE:
+KEYWORDS:
+
+#Current language is required for the DarkSky weather API
+CURRENT_LANGUAGE: zh-tw
+
+#Header
+NOSCRIPT: 要在Skigulmarg.com上獲得更好的體驗，請在瀏覽器中啟用JavaScript
+
+##Navigation Menu Bar
+
+ABOUT:
+  TITLE: 關於我們
+SERVICE: 
+  TITLE: 滑雪套組
+GALLERY: 
+  TITLE: 相片
+FAQ: 
+  TITLE: 常見問題
+CONTACT: 
+  TITLE: 聯絡我們
+
+##Header search box
+HEADER_SEARCH:
+  H2: To active travellers<br>looking to ski the Himalayas
+  P_TOP: We offer exactly what you need — simplicity, comfort and professionalism. We have the answer you are looking for, and make it easy to book online.
+  P_BOTTOM: The most complete website about Gulmarg Ski Resort
+
+SEARCH:
+  PLACEHOLDER: "搜索"
+  RESULTS: "搜索结果"
+  RESULTS_SUMMARY_SINGULAR: "查询: <strong>%s</strong> 找到 1 个结果"
+  RESULTS_SUMMARY_PLURAL: "查询: <strong>%s</strong> 找到 %s 个结果"
+
+#Footer
+
+##Follow
+FOLLOW:
+  TITLE: 訂閱電子報
+
+##Newsletter
+NEWSLETTER:
+  TITLE: 追蹤我們
+
+##Legal links
+LEGAL:
+  LINK: /legal
+  TERMS:
+    TITLE: Terms of Use
+    LINK: /terms-of-use
+  PRIVACY:
+    TITLE: Privacy Policy
+    LINK: /privacy-policies
+  BOOKING:
+    TITLE: Booking Conditions
+    LINK: /booking-conditions
+
+SPONSORS: 我們的讚助商
+
+LANGUAGE: 語言
+COPYRIGHT: 版權所有
+
+COOKIES:
+  MESSAGE: 本網站使用cookies以確保您在我們的網站上獲得最佳體驗。
+  MORE: 更多信息
+  DECLINE: 下降
+  ACCEPT: 接受
+
+#404 ERROR
+404_ERROR:
+  ERROR: "錯誤"
+  ERROR_MESSAGE: "看起來這個頁面不存在"
+  ERROR_MESSAGE_EXTENDED: "您要查找的頁面可能已被刪除，名稱已更改或暫時不可用。"
+  PAGE_SEARCH_HEADER: "請再試一次"
+  PAGE_SEARCH_PLACEHOLDER: "特魯維茲選民頁面"

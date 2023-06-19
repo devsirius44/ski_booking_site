@@ -1,0 +1,6 @@
+firstName: 'Ugaraja '
+lastName: Pillay
+email: rajenpillay84@gmail.com
+phone: '+27817948637'
+message: "Mrs. Pilllay and I wish to come from Delhi to Gulmarg on 27 January 2019. She is a beginner skier & I advanced. We are looking for a 4 night package (Sunday 27th with 3 / 4 days skiing). She requires a ski instructor as do I. We are looking for a Complete Package. Must be a Good Hotel with ski in/ ski out. We require full equipment hire + Ski Pass (we have all the cltohing required) . \r\nCan you give some details please. \r\nThank you, \r\nUgaraja Pillay."
+

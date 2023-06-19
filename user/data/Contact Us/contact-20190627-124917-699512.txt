@@ -1,0 +1,6 @@
+firstName: Anders
+lastName: Ericsson
+email: anders.ericson@bahnhof.se
+phone: '+46706893004'
+message: "Hello!\r\nI would like to book a package for 1 skier.\r\nI have booked my flight to India, I will arrive in Delhi 19th Jan 2020 at 1015. My return flight is 1st Feb at 1205. I plan to ski 12 days starting the 20th Jan.\r\nI would like a comfort hotel, singel room and a private local guide, if I can afford it.\r\nWhat would the price be?\r\nBest regards Anders Ericsson"
+

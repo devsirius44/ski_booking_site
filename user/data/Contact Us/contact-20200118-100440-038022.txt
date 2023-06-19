@@ -1,0 +1,6 @@
+firstName: ChasityLib
+lastName: ChasityLib
+email: 'vova_drugovec@yahoo.com '
+phone: '83386666349'
+message: "Добрый день. Зиму отменили :) \r\nНу а если весна... Пора знакомиться и гулять :) \r\nhttp://meeting-club.online"
+

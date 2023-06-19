@@ -1,0 +1,6 @@
+firstName: 'Max '
+lastName: Williams
+email: webrank2@googlerankings.co.in
+phone: '7077060205'
+message: "Hello And Good Day\r\n\r\nI am Max (Jitesh Chauhan), Marketing Manager with a reputable online marketing company based in India.\r\n\r\nWe can fairly quickly promote your website to the top of the search rankings with no long term contracts!\r\n\r\nWe can place your website on top of the Natural Listings on Google, Yahoo and MSN. Our Search Engine Optimization team delivers more top rankings than anyone else and we can prove it. We do not use \"link farms\" or \"black hat\" methods that Google and the other search engines frown upon and can use to de-list or ban your site. The techniques are proprietary, involving some valuable closely held trade secrets. Our prices are less than half of what other companies charge.\r\n\r\nWe would be happy to send you a proposal using the top search phrases for your area of expertise. Please contact me at your convenience so we can start saving you some money.\r\n\r\nIn order for us to respond to your request for information, please include your company’s website address (mandatory) and or phone number.\r\n\r\nSo let me know if you would like me to mail you more details or schedule a call. We'll be pleased to serve you.\r\nI look forward to your mail.\r\n\r\nThanks and Regards\r\n"
+

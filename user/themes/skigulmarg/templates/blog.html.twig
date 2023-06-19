@@ -1,0 +1,75 @@
+{% extends 'partials/base.html.twig' %}
+{% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
+{% set collection = page.collection() %}
+{% set show_breadcrumbs = header_var('show_sidebar', '/blog')|default(true) %}
+{% set show_sidebar = header_var('show_sidebar')|default(true) %}
+{% set show_pagination = header_var('show_sidebar')|default(true) %}
+
+{% block content %}
+
+<!-- Header Search -->
+{% include 'partials/header.search.short.html.twig' %}
+<!-- end: Search -->
+
+<!-- Breadcrumbs -->
+{% include 'partials/breadcrumbs.html.twig' %}
+<!-- end: Breadcrumbs -->
+
+<!-- Content -->
+<section id="page-content" style="padding-top: 40px">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-push-0 col-md-push-4 col-md-8 col-lg-9 col-lg-push-3">
+                {% embed 'partials/layout.html.twig' with {blog: page} %}
+                    {% block item %}
+
+                        <div class="bricklayer">
+                        {% for child in collection %}
+                            {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
+                        {% endfor %}
+                        </div>
+
+                        {% if show_pagination and config.plugins.pagination.enabled and collection.params.pagination %}
+                            <div id="listing-footer">
+                                {% include 'partials/pagination.html.twig' with {base_url: page.url, pagination: collection.params.pagination} %}
+                            </div>
+                        {% endif %}
+
+                    {% endblock %}
+                {% endembed %}
+
+                <!-- AddToAny BEGIN -->
+                <h5 class="m-t-40">{{ "SHARE"|t }}</h5>
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                    <a class="a2a_button_facebook"></a>
+                    <a class="a2a_button_facebook_messenger"></a>
+                    <a class="a2a_button_whatsapp"></a>
+                    <a class="a2a_button_email"></a>
+                    <a class="a2a_button_copy_link"></a>
+                </div>
+                <!-- AddToAny END -->
+            </div>
+
+            <!-- Sidebar-->
+            <div class="sidebar col-sm-pull-0 col-md-pull-8 col-md-4 col-lg-3 col-lg-pull-9">
+                 <!-- Booking widget -->
+                <h3>{{ "BOOK_WIDGET.SELECT_YOUR_TRIP"|t }}</h3>
+                {% include 'partials/booking.html.twig' %}
+                <!-- end: Booking widget -->
+            </div>
+            <!-- end: sidebar-->
+        </div>
+    </div>
+</section>
+<!-- end: Content -->
+
+{% endblock %}
+
+{% block scripts %}
+    {% do assets.addJs('//static.addtoany.com/menu/page.js') %}
+    {% do assets.addJs('//www.cheapflights.com/api/v1') %}
+
+    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'a6e5e2d8-bfbb-4a7f-9bfb-c9c0d5e48f3d', f: true }); done = true; } }; })();</script>
+
+{% endblock %}

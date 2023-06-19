@@ -1,0 +1,6 @@
+firstName: 'Aamir '
+lastName: Malik
+email: ammy9037@gmail.com
+phone: '9797279037'
+message: 'Need to rent skiing equipments'
+

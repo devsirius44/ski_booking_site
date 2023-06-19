@@ -1,0 +1,129 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block customStyles %}
+    <style>
+        @media (min-width: 992px) {
+            #header.header-transparent.header-sticky #header-wrap,
+            #header.header-transparent #header-wrap {
+                background-color: white!important;
+            }
+            #header #header-wrap #logo svg path.skigulmarg-logo {
+                fill: #252525;
+            }
+            #mainMenu nav > ul > li > a {
+                color: #252525;
+            }
+            #mainMenu nav > ul > li > a:hover {
+                color: #262626;
+            }
+            #header .menu-right > ul > li a i,
+            #header .menu-right > ul > li span {
+                color: #252525;
+            }
+
+            #header .menu-right > ul > li.mega-menu-item .title[title="Weather"] {
+                border-right: 1px solid #252525;
+            }
+
+            #header #mainMenu-trigger button .lines,
+            #header #mainMenu-trigger button .lines:before,
+            #header #mainMenu-trigger button .lines:after {
+                background-color: #252525;
+            }
+        }
+
+        section#page-content {
+            height: calc(100vh - 80px);
+        }
+        section#page-content>.container {
+            position: relative;
+            height: 100%;
+        }
+        section#page-content>.container>.row {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* ----------- iPhone 4, 4S, 5, 5S, 5C, 5SE 6, 6+, 6S, 7, 7+, 8, 8+, iPhone X ----------- */
+        /* ----------- Samsung Galaxy S3, Galaxy S4, S5, S6 and Note 3 ----------- */
+        /* ----------- HTC One ----------- */
+        /* ----------- Google Pixel, Pixel XL, Pixel 2 and Pixel 2 XL ----------- */
+        /* ----------- Windows Phone ----------- */
+        /* Landscape */
+        @media only screen
+          and (min-device-width: 320px)
+          and (max-device-width: 640px)
+          and (-webkit-min-device-pixel-ratio: 1)
+          and (orientation: landscape),
+
+          only screen
+          and (min-device-width: 320px)
+          and (max-device-width: 667px)
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (orientation: landscape),
+
+          only screen
+          and (min-device-width: 320px)
+          and (max-device-width: 480px)
+          and (-webkit-min-device-pixel-ratio: 1)
+          and (orientation: portrait),
+
+          only screen and (min-device-width: 384px)
+          and (max-device-width: 854px)
+          and (-webkit-min-device-pixel-ratio: 1)
+          and (orientation: landscape),
+
+          only screen and (min-device-width: 320px)
+          and (max-device-width: 812px)
+          and (-webkit-min-device-pixel-ratio: 3)
+          and (orientation: landscape),
+
+          only screen and (min-device-width: 360px)
+          and (max-device-width: 640px)
+          and (-webkit-min-device-pixel-ratio: 4)
+          and (orientation: landscape),
+
+          only screen and (min-device-width: 600px)
+          and (max-device-width: 960px)
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (orientation: landscape),
+
+          only screen and (min-device-width: 411px)
+          and (max-device-width: 823px)
+          and (-webkit-min-device-pixel-ratio: 2.6)
+          and (orientation: landscape) {
+            section#page-content {
+                height: 100%;
+                padding-top: 20px;
+            }
+            section#page-content>.container>.row {
+                transform: none;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<section id="page-content" style="padding:0">
+    <div class="container" style="position:relative;height: calc(100vh - 80px)">
+        <h1 style="text-transform: uppercase; font-weight: 600;padding-top:15%;">{{ "UNDER_CONSTRUCTION.TITLE"|t }}</h1>
+        <a href="/" class="btn btn-rounded btn-outline" style="text-decoration: none">{{ "UNDER_CONSTRUCTION.BUTTON"|t }}</a>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 583.312 583.312" style="max-width: 40%;fill:#C91100;position:absolute;bottom:0;right:15px;" xml:space="preserve">
+            <g id="iconos_10_">
+                <polygon points="181.688,384.676 334.688,284.862 334.688,198.656 181.688,298.469"/>
+                <polygon points="76.5,348.863 172.125,384.676 172.125,298.469 76.5,262.667"/>
+                <polygon points="176.906,283.724 320.344,191.035 226.459,150.824 82.477,246.239"/>
+                <polygon points="497.25,93.468 344.25,193.282 344.25,279.488 497.25,179.674"/>
+                <polygon points="482.906,85.847 389.021,45.637 245.039,141.051 339.469,178.537"/>
+                <polygon points="105.188,537.676 258.188,437.861 258.188,351.656 105.188,451.469"/>
+                <polygon points="95.625,451.469 0,415.668 0,501.863 95.625,537.676"/>
+                <polygon points="161.635,398.961 73.459,361.199 5.977,402.605 100.406,436.725"/>
+                <polygon points="506.812,167.253 511.594,168.974 572.822,131.211 506.812,102.945"/>
+                <polygon points="267.75,432.488 420.75,332.674 420.75,246.468 267.75,346.281"/>
+                <polygon points="430.312,241.094 430.312,327.301 583.312,227.487 583.312,141.281"/>
+            </g>
+        </svg>
+    </div>
+</section>
+{% endblock %}

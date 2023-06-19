@@ -1,0 +1,9 @@
+version: '1.2'
+timestamp: 1684279481
+count: 1
+index:
+  yanik:
+    storage_key: yanik
+    storage_timestamp: 1684279481
+    key: yanik
+    email: yanik@skigulmarg.com

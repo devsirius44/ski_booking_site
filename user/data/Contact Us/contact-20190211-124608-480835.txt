@@ -1,0 +1,6 @@
+firstName: Sandeep
+lastName: Kumar
+email: sakumar300@gmail.com
+phone: '0018572430307'
+message: "We are looking for a ski package for me and my 18 year old son. Unfortunately, we will have only 2 days of skiing due to scheduling conflicts. We plan to be in Gulmarg around March 15th. My son is a competitive skier and I am also an advanced skier but we will need a guide, equipment, hotet accommodations and airport pick-up from Srinagar. Can you please help us connect with a person who can assist in planning our trip?\r\nMany thanks, Sandeep"
+

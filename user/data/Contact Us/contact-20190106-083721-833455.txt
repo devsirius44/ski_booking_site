@@ -1,0 +1,6 @@
+firstName: Adina
+lastName: Riposan-Taylor
+email: adina.riposan@gmail.com
+phone: null
+message: 'Hello, could you please tell me if you can provide a one-on-one sky trainer for an 11 years old boy and how much would that cost?  He is a complete beginner in ski.  We plan to visit family friends in Srinagar and stay with them, so we don’t need a full ski vacation package. Could you provide a trainer for a few days? Thank you.'
+

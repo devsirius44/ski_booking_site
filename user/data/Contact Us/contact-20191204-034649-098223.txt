@@ -1,0 +1,6 @@
+firstName: Jerry
+lastName: Corral
+email: jerrycorral13@gmail.com
+phone: '9513789094'
+message: 'Hi Yanik, its Jerry Corral, Snowboarder from California. I was wondering how is the Start of the Season  ? Has Gulmarg received any Snow yet ? I''m gonna start the process of getting ready for A Visit to Gulmarg. I got to get a travel Visa, then purchase Airline tickets,  then Accommodations. Well, if you have any info/ tips that would be Cool.'
+
